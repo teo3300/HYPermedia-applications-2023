@@ -9,6 +9,11 @@ Project for the course "Hypermedia applications" at PoliMi - 2023
 
 ## Useful commands
 
+After installing `npm` following [the official documentation](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm), nstall the `nuxt` package with the command
+```sh 
+npm install nuxt
+```
+
 Run server locally
 ```sh
 npm run dev -- -o
