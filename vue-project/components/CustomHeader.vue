@@ -29,6 +29,7 @@
 }
 .menu {
     display : flex ; 
+    width : 100% ; 
     color : #0B132B ; 
     font-family : 'Crushed'; 
 }

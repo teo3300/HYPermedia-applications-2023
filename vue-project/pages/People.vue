@@ -7,7 +7,7 @@
     </main>
 </template>
 
-<style>
+<style scoped>
 main {
     width: 100%;
     display: flex;
