@@ -1,6 +1,6 @@
 <template class="header">
     <nav class="navbar">
-        <NuxtLink to=""><img src="../images/3.png" alt="I3E Logo" class="logo"></NuxtLink>
+        <NuxtLink to="/"><img src="../images/whitelogo.png" alt="I3E Logo" class="logo"></NuxtLink>
         <ul class="nav-menu">
             <NuxtLink to="aboutus" class="nav-item">About us</NuxtLink>
             <NuxtLink to="projects" class="nav-item">Projects</NuxtLink>
@@ -52,6 +52,11 @@ export default {
 .logo {
     width: 50px;
     height: 50px;
+    border : dotted white 2px ; 
+}
+.logo:hover {
+    border : dotted #0B132B 2px ; 
+    border-radius : 5px ; 
 }
 
 li {
@@ -91,26 +96,19 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.nav-item, .nav-item:visited {
     font-family: 'Crushed', sans-serif;
     color : #0B132B ;
+    margin-left: 5rem;
 }
 .nav-item:hover {
     text-decoration : underline ;
     color : #5BC0BE ; 
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-
 }
 
-.nav-item {
-    margin-left: 5rem;
-}
-
-.nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #482ff7;
-}
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
