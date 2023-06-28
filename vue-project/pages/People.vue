@@ -1,10 +1,12 @@
 <!--    About us page    -->
 <template>
+    <CustomHeader></CustomHeader>
     <main>
-        <CustomHeader></CustomHeader>
-        <CustomFooter></CustomFooter>
-
+        
+       
     </main>
+    <CustomFooter></CustomFooter>
+
 </template>
 
 <style scoped>

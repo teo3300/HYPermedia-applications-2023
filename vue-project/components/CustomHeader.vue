@@ -5,7 +5,7 @@
             <NuxtLink to="aboutus" class="nav-item">About us</NuxtLink>
             <NuxtLink to="projects" class="nav-item">Projects</NuxtLink>
             <NuxtLink to="People" class="nav-item">People</NuxtLink>
-            <NuxtLink to="areas" class="nav-item">Areas</NuxtLink>
+            <NuxtLink to="Areas" class="nav-item">Areas</NuxtLink>
             <NuxtLink to="contact" class="nav-item">Contact</NuxtLink>
             <!--<searchBar></searchBar>  TODO: component to be created -->
         </ul>

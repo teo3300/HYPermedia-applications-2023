@@ -6,7 +6,7 @@
             <NuxtLink to="aboutus" class="nav-item">About us</NuxtLink> <br>
             <NuxtLink to="projects" class="nav-item">Projects</NuxtLink> <br>
             <NuxtLink to="People" class="nav-item">People</NuxtLink> <br>
-            <NuxtLink to="areas" class="nav-item">Areas</NuxtLink> <br>
+            <NuxtLink to="Areas" class="nav-item">Areas</NuxtLink> <br>
             <NuxtLink to="legal" class="nav-item">Legal</NuxtLink>
         </div>
 
