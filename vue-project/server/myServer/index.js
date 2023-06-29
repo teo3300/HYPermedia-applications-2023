@@ -5,7 +5,7 @@
 import cors                     from "cors"
 import path                     from "path"
 import express                  from "express"
-import dbInitialization         from "./silly_db.js"
+import dbInitialization         from "./dbInit.js"
 import { fileURLToPath }        from "url"
 import { DataTypes, Sequelize } from "sequelize"
 
@@ -15,7 +15,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const db = new Sequelize({
-  dialect: "sqlite"
+  dialect: "sqlite",
   storage: path.join(__dirname, "db.sqlite")
 })
 
@@ -44,7 +44,7 @@ async function initDB() {
       allowNull: false
     },
     data: {
-      type: DataTypse.JSON,
+      type: DataTypes.JSON,
       allowNull: false
     }
   })
@@ -59,7 +59,7 @@ async function initDB() {
       allowNull: false
     },
     data: {
-      type: DataTypse.JSON,
+      type: DataTypes.JSON,
       allowNull: false
     }
   })
@@ -70,30 +70,30 @@ async function initDB() {
       allowNull: false
     },
     data: {
-      type: DataTypse.JSON,
+      type: DataTypes.JSON,
       allowNull: false
     }
   })
 
   models.Concern = db.define('concern', {
     placeholder: {
-      type: DataTypse.JSON,
+      type: DataTypes.JSON,
       allowNull: false
     },
     data: {
-      type: DataTypse.JSON,
+      type: DataTypes.JSON,
       allowNull: false
     }
   })
 // #: }}}
 // #: Entities relations {{{
   // People - Projects
-  models.People.hasMany(Projects)
-  models.Projects.belongsTo(People)
+  models.People.hasMany(models.Projects)
+  models.Projects.belongsTo(models.People)
 
   // Projects - Area
-  models.Projects.belongsToMany(Areas, { through: 'Concern'})
-  models.Areas.belongsToMany(Projects, { through: 'Concern'})
+  models.Projects.belongsToMany(models.Areas, { through: 'Concern'})
+  models.Areas.belongsToMany(models.Projects, { through: 'Concern'})
 // #: }}}
   // Recreate the DB everytime
   await db.sync({ force: true })
@@ -102,7 +102,7 @@ async function initDB() {
 }
 
 async function initServer() {
-  const models = awayit initDB()
+  const models = await initDB()
   // Define DB queries
   // #: All people, sorted alphabetically {{{
   app.get('/people', async(req, res) => {
@@ -156,7 +156,7 @@ async function initServer() {
     const data = await models.Projects.findAll({
       order: [
         ['name', 'ASC'],
-      ]
+      ],
       include: [{
         model: Areas,
         required: true,
@@ -176,7 +176,7 @@ async function initServer() {
     const data = await models.People.findOne({
       where: {
         id: req.params.id
-      }
+      },
       include: [{
         model: models.Projects,
         order: [
@@ -198,9 +198,6 @@ async function initServer() {
       where: {
         id: req.params.id
       }
-      include: [{
-        model: models.People,
-      }]
     });
 
     if (data) {
@@ -225,10 +222,8 @@ async function initServer() {
     }
   })
   // #: }}}
-  // Run server
-  app.listen(3001, () => {
-    console.log("Starting Data server on port 3000")
-  })
 }
 
 initServer();
+console.log("SERVER INITIALIZED")
+export default fromNodeMiddleware(app)
