@@ -14,7 +14,7 @@
                     </p>
                 </div>
             </div>
-            <img :src="image"
+            <img :src="`/img/projects/${image}`"
                 alt="Project's image"/>
         </div>
     </div>
@@ -45,7 +45,7 @@
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 4em;
         font-weight: lighter;
         margin: 0px;
         padding: 10px;
@@ -65,7 +65,7 @@
 
     #desc-short {
         font-size: 1.5em;
-        margin: 1.5em 1em 2.5em 2em;
+        margin: 1.5em 1.5em 2.5em 1.5em;
     }
 
     #desc-long > p {

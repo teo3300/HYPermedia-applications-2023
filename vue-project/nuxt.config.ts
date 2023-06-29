@@ -3,18 +3,14 @@ export default defineNuxtConfig({
     css: [
         '~/assets/css/general.css'
     ],
-
-    serverHandlers: [
-        {
-            route: '/server',
-            handler: '~/server/myServer/index.js',
-            middleware: true
-        }
-    ],
     ssr: true,
     runtimeConfig: {
+        dev: 0,
         public: {
-            baseURL: "http://localhost:3000"
+            serverURL: "http://localhost:3001"
         }
+    },
+    app: {
+        baseURL: '/HYPermedia-applications-2023'
     }
 })

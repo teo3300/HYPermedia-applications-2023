@@ -21,7 +21,7 @@ const db = new Sequelize({
 
 // Prevent CORS policies to block in case of local execution
 const corsOptions = {
-  origin: "http://localhost:3000"
+  origin: "http://localhost:3000" //Applied when run locally
 }
 const app = express()
 app.use(express.json())
@@ -221,9 +221,11 @@ async function initServer() {
       res.sendStatus(404)
     }
   })
+      // Using a different port
+    app.listen(3001, () => {
+        console.log("Listening on port 3001")
+    })
   // #: }}}
 }
 
 initServer();
-console.log("SERVER INITIALIZED")
-export default fromNodeMiddleware(app)
