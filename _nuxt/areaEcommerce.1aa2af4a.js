@@ -1,0 +1,1 @@
+import{_ as n,a}from"./CustomFooter.c8196268.js";import{a as c,e as _,h as e,F as r,f as s,o as m}from"./entry.6fd50ecf.js";import"./nuxt-link.7124f483.js";const l={},p=s("main",null,null,-1);function u(f,d){const o=n,t=a;return m(),_(r,null,[e(o),p,e(t)],64)}const B=c(l,[["render",u]]);export{B as default};
