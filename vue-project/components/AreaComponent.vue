@@ -7,7 +7,7 @@
             </div>
             <div class="intro">
                 <p>{{descriptions}}</p>
-                <SeeMore :link="`${pageURL}`"/>
+                <seeMore :link="`${pageURL}`"/>
             </div>
         </div>
 </template>
