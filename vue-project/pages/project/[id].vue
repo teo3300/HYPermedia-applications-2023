@@ -1,6 +1,10 @@
 <template>
     <main>
         <customHeader></Customheader>
+        <ShortBreadCrumbs
+            parent = "Projects"
+            link = "/projects"
+            :current = "proj.name"/>
         <projectTitle
             :name = "proj.name"
             :desc_short = "proj.data.desc_short"
