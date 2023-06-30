@@ -24,7 +24,7 @@ export default async (models) => {
           `Through our intuitive user interface, TechSage offers a comprehensive suite of tools designed to simplify budgeting, expense tracking, and financial goal setting. Users can effortlessly monitor their cash flow, track expenses, and receive proactive alerts to avoid overspending or missed bill payments. Our smart budgeting features provide real-time visibility into spending patterns, helping users identify areas for potential savings and make data-driven decisions to optimize their financial outcomes.`
         ]
       },
-      supervisorId: person0.id
+      personId: person0.id
     }
   ]
   const proj0 = await models.Projects.create(projectModel[0])
