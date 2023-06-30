@@ -16,7 +16,7 @@
     const URI = useRuntimeConfig().public.serverURL
         + '/project/'
         + id
-    console.log('Fetching: "' + URI + '"')
+    console.log('/project/' + id + '\tFetching: "' + URI + '"')
     const { data: proj } =
         await useFetch(URI)
 </script>

@@ -9,13 +9,12 @@
                 <div class="bar"></div>
                 <div id="desc-long"> <!-- Longer description of the project -->
                     <p v-for="item in desc_long"
-                        :key="item">
+                        :key="item.id">
                             {{item}}
                     </p>
                 </div>
             </div>
-            <img :src="`/img/projects/${image}`"
-                alt="Project's image"/>
+            <img :src="`/img/projects/${image}`" alt="Project's image"/>
         </div>
     </div>
 </template>

@@ -29,6 +29,11 @@ app.use(cors(corsOptions))
 
 // #: }}}
 
+function print(data) {
+  console.log('Result:\n' + JSON.stringify(data, null, 4))
+  return data
+}
+
 async function initDB() {
   const models = {}
   await db.authenticate()
@@ -112,7 +117,7 @@ async function initServer() {
       ]
     });
 
-    res.status(200).json(data)
+    res.status(200).json(print(data))
   })
   
   // #: }}}
@@ -124,7 +129,7 @@ async function initServer() {
       ]
     });
 
-    res.status(200).json(data)
+    res.status(200).json(print(data))
   })
   // #: }}}
   // #: All areas, sorted alphabetically {{{
@@ -135,7 +140,7 @@ async function initServer() {
       ]
     });
 
-    res.status(200).json(data)
+    res.status(200).json(print(data))
   })
   // #: }}}
   // #: Top projects, sorted by relevance {{{
@@ -147,7 +152,7 @@ async function initServer() {
       limit: 5
     });
     
-    res.status(200).json(data)
+    res.status(200).json(print(data))
   })
   // #: }}}
   // #: Projects by area, sorted alphabetically {{{
@@ -165,7 +170,7 @@ async function initServer() {
     });
 
     if (data) {
-      res.status(200).json(data)
+      res.status(200).json(print(data))
     } else {
       res.sendStatus(404)
     }
@@ -186,7 +191,7 @@ async function initServer() {
     });
 
     if (data) {
-      res.status(200).json(data)
+      res.status(200).json(print(data))
     } else {
       res.sendStatus(404)
     }
@@ -200,8 +205,10 @@ async function initServer() {
       }
     });
 
+    print(data)
+
     if (data) {
-      res.status(200).json(data)
+      res.status(200).json(print(data))
     } else {
       res.sendStatus(404)
     }
@@ -216,7 +223,7 @@ async function initServer() {
     });
 
     if (data) {
-      res.status(200).json(data)
+      res.status(200).json(print(data))
     } else {
       res.sendStatus(404)
     }
