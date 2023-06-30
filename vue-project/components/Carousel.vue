@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel">
+  <div >
     <div class="carousel-inner">
       <carousel-item v-for="(slide, index) in slides" :slide="slide" :key="`item-${index}`" :current-slide="currentSlide"
         :index="index" :direction="direction" ></carousel-item>
@@ -45,11 +45,7 @@ export default {
 </script>
   
 <style scoped >
-.carousel {
-  width: 80%;
-  height: 12em;
-  margin: 20px 10%;
-}
+
 
 .carousel-inner {
   position: relative;

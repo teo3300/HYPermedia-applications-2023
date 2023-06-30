@@ -1,6 +1,6 @@
 <template>
     <div class="title-description">
-        <img :src="`/${imageURL}`" alt="Illustration image" />
+        <img :src="`${imageURL}`" alt="Illustration image" />
         <div class="blue-transparent-1"></div>
         <h1>{{ title }}</h1>
         <div class="blue-transparent-2">
@@ -51,7 +51,7 @@ img {
 
 .blue-transparent-1 {
     position: relative;
-    top: -101%;
+    top: -103%;
     width: 100%;
     height: 100%;
     background: rgba(28, 37, 65, 0.60);

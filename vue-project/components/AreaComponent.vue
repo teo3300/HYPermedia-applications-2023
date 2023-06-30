@@ -1,7 +1,7 @@
 <template>
     <div class="one-area">
             <div class="title-image">
-                <img :src="`/${imageURL}`" alt="Illustration image" />
+                <img :src="`${imageURL}`" alt="Illustration image" />
                 <h2 class="title">{{title}}</h2>
                 <div class="transparent-white"></div>
             </div>

@@ -5,12 +5,12 @@
             <h2>Partners</h2>
             <div class="bar"></div>
         </div>
-        <Carousel :slides="slidesPartners"></Carousel>
+        <Carousel :slides="slidesPartners" class="carouselPartner"></Carousel>
         <div class="subtitle">
             <h2>Projects</h2>
             <div class="bar"></div>
         </div>
-        <Carousel :slides="slidesProjects"></Carousel>
+        <Carousel :slides="slidesProjects" class="carouselProject"></Carousel>
     
 
 </template>
@@ -80,4 +80,15 @@ h2 {
     border: solid 1px #5BC0BE;
     margin: auto;
 }
+.carouselPartner, .carouselProject {
+  width: 80%;
+  margin: 20px 10%;
+}
+.carouselPartner {
+    height: 12em;
+}
+.carouselProject {
+    height: 20em;
+}
+
 </style>

@@ -16,22 +16,16 @@ export default {
             description: "In the Clean Energy and Sustainability sector we focus on investments that promote environmentally friendly practices, renewable energy sources, and sustainable solutions. It encompasses areas such as solar and wind energy, energy storage technologies, electric vehicles, green infrastructure, and initiatives aimed at reducing carbon emissions. \n Investing in clean energy and sustainability offers the opportunity to drive the transition to a more sustainable future, combat climate change, and create a positive environmental impact while also seeking attractive financial returns.",
             slidesPartners: [
                 {
-                    imgPartner: "_nuxt/images/partners/hazylogo.png",
-                    namePartner: "HAZY",
-                    textPartner: "Key words : AI, Machine Learning, Data and Analytics, Business Intelligence",
-                    urlPartner: "https://hazy.com",
+                    img: "_nuxt/images/partners/recycleyelogo.png",
+                    name: "Recycleye",
+                    text: "Climate Tech & Green Tech, Foodtech, Hardware, Machine Learning, Data and Analytics, Manufacturing, Wearables",
+                    url: "http://recycleye.com/",
                 },
                 {
-                    imgPartner: "_nuxt/images/partners/hazylogo.png",
-                    namePartner: "HAZY",
-                    textPartner: "This close-up picture features the neck of a guitar as its main focus. The dominant colors in the image are AUTUMNAL and CAFE AU LAIT, according to AI analysis. According to Google Lens, the closest match for the picture is a '1950's Gretsch Mahogany Soprano Ukulele'.",
-                    urlPartner: "",
-                },
-                {
-                    imgPartner: "_nuxt/images/partners/hazylogo.png",
-                    namePartner: "HAZY",
-                    textPartner: "This picture captures a guitar resting on a chair. The AI identifies the main focus as a guitar with a strap. The dominant colors in the image are WINETASTING, ESTATE BLUE, and COGNAC. According to Google Lens, the closest match for the picture is 'Melody Leather Guitar Strap Headstock Tie Accessories for Guitar.''",
-                    urlPartner: "",
+                    img: "_nuxt/images/partners/Logo_SESAMm.png",
+                    name: "SESAMm",
+                    text: "Climate Tech & Green Tech, Fintech, AI, Machine Learning, Data and Analytics, Investing, Personal Finance",
+                    url: "https://www.sesamm.com/",
                 },
             ],
             slidesProjects: [

@@ -1,14 +1,12 @@
 <template>
   <transition :name="transitionEffect">
     <div class="carousel-item" v-show="currentSlide === index">
-      <!-- <img :src="slide" /> -->
-      <div class="base-image-input" :style="{ 'background-image': `url(${slide.imgPartner})` }"> </div>
-      {{ console.log('slide', slide) }}
+      <!--<div v-if="" ></div>-->
+      <div class="base-image-input"> <img :src="`${slide.img}`" /> </div>
       <div class="text">
-        <h3>{{ slide.namePartner }}</h3>
-        {{ slide.textPartner }}
-        <br>
-        <a :href="`${slide.urlPartner}`"> Learn more about them</a>
+        <h3>{{ slide.name }}</h3>
+        <p>{{ slide.text }}</p>
+        <a :href="`${slide.url}`">Learn more</a>
       </div>
 
     </div>
@@ -70,28 +68,33 @@ export default {
   display: block;
   width: 35%;
   aspect-ratio: 1/1;
-  cursor: pointer;
-  background-size: cover;
-  background-position: center center;
+  align-content: center;
+  object-fit: contain;
+}
+
+img {
+  width: 100%;
   object-fit: contain;
 }
 
 .text {
   width: 50%;
+  text-align: justify;
 }
 
 h3 {
-  margin : 10px 0px; 
+  margin: 10px 0px;
   font-family: 'Crushed', serif;
 }
 
 a {
-  color : #5BC0BE ; 
-  margin : 10px 20px ; 
+  color: #5BC0BE;
+  margin-left: 40% ;
 }
+
 a:hover {
-  color : #0B132B ;
+  color: #0B132B;
   font-size: 1.1em;
-  transition : color 0.5s, font-size 0.5s; 
+  transition: color 0.5s, font-size 0.5s;
 }
 </style>
