@@ -10,15 +10,15 @@
 
 <template>
     <main>
-        <NuxtLink :to = "link" class="link">
-            <div class="card">
+        <div class="card">
+            <NuxtLink :to = "link" class="link">
                 <div class="image-container">
                     <img :src="`/HYPermedia-applications-2023/img/projects/${image}`"
                          class="img"/>
                 </div>
                 <span class="title">{{ text }}</span>
-            </div>
-        </NuxtLink>
+            </NuxtLink>
+        </div>
     </main>
 </template>
 
@@ -34,7 +34,7 @@
 
 <style scoped>
 
-    a {
+    .link {
         text-decoration: none;
         color: white;
     }
@@ -42,33 +42,38 @@
     .image-container {
         display: flex;
         justify-content: center;
-        border-radius: 10px;
-        width: 250px;
-        height: 250px;
+        border-radius: 3px;
+        max-width: 250px;
+        aspect-ratio: 3/2;
         overflow: hidden;
-        margin-bottom: 10px;
+        margin-bottom: 6px;
     }
 
     .img {
         vertical-align: middle;
         max-width: 100%;
-        height: auto;
         width: auto;
         margin: auto;
+        transform: translateY(-33%);
     }
 
     .card {
         display: flex;
         flex-flow: column;
-        padding: 20px;
-        border-radius: 20px;
+        padding: 6px;
+        border-radius: 6px;
         width: fit-content;
         height: fit-content;
         background-color: #3A506B;
     }
 
-    .title {
-        font-size: 2em;
+    .image-container:hover {
+        width: 280px;
+    }
+
+
+    .card {
+        font-size: 1.5em;
         text-align: center;
     }
 
