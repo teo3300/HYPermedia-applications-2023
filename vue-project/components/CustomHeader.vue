@@ -2,11 +2,11 @@
     <nav class="navbar">
         <NuxtLink to="/"><img src="../images/whitelogo.png" alt="I3E Logo" class="logo"></NuxtLink>
         <ul class="nav-menu">
-            <NuxtLink to="aboutus" class="nav-item">About us</NuxtLink>
-            <NuxtLink to="projects" class="nav-item">Projects</NuxtLink>
-            <NuxtLink to="People" class="nav-item">People</NuxtLink>
-            <NuxtLink to="Areas" class="nav-item">Areas</NuxtLink>
-            <NuxtLink to="contact" class="nav-item">Contact</NuxtLink>
+            <NuxtLink to="/aboutus" class="nav-item">About us</NuxtLink>
+            <NuxtLink to="/projects" class="nav-item">Projects</NuxtLink>
+            <NuxtLink to="/People" class="nav-item">People</NuxtLink>
+            <NuxtLink to="/Areas" class="nav-item">Areas</NuxtLink>
+            <NuxtLink to="/contact" class="nav-item">Contact</NuxtLink>
             <!--<searchBar></searchBar>  TODO: component to be created -->
         </ul>
         <div class="breadcrumb-search">

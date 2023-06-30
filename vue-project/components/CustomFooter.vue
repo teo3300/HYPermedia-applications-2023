@@ -3,11 +3,11 @@
 
         <div class="footer-left">
             <p>Learn more : <br></p>
-            <NuxtLink to="aboutus" class="nav-item">About us</NuxtLink> <br>
-            <NuxtLink to="projects" class="nav-item">Projects</NuxtLink> <br>
-            <NuxtLink to="People" class="nav-item">People</NuxtLink> <br>
-            <NuxtLink to="Areas" class="nav-item">Areas</NuxtLink> <br>
-            <NuxtLink to="legal" class="nav-item">Legal</NuxtLink>
+            <NuxtLink to="/aboutus" class="nav-item">About us</NuxtLink> <br>
+            <NuxtLink to="/projects" class="nav-item">Projects</NuxtLink> <br>
+            <NuxtLink to="/People" class="nav-item">People</NuxtLink> <br>
+            <NuxtLink to="/Areas" class="nav-item">Areas</NuxtLink> <br>
+            <NuxtLink to="/legal" class="nav-item">Legal</NuxtLink>
         </div>
 
         <span class="line"></span>
@@ -21,7 +21,7 @@
 
         <div class="footer-right">
             <p>Find us : <br></p>
-                <NuxtLink to="contact" class="nav-item">Contact</NuxtLink> <br>
+                <NuxtLink to="/contact" class="nav-item">Contact</NuxtLink> <br>
                 <a href="mailto:i3e@gmail.com">i3e@gmail.com</a> <br>
                 <a href="">+39 1 23 45 67 89</a> <br>
                 <a href="https://www.instagram.com/"><img src="../images/instagram.png" alt="Instagram" class="logo"> Instagram </a> <br>
