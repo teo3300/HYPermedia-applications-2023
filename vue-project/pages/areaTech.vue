@@ -32,6 +32,12 @@ export default {
                     text: "AI, Machine Learning, Data and Analytics, Business Intelligence, Open Source",
                     url : "https://www.seldon.io/",
                 },
+                {
+                    img: "_nuxt/images/partners/veesionlogo.png",
+                    name: "Veesion",
+                    text: "CPG & Consumer Goods, AI, Machine Learning, Privacy and Security, Video, Business Intelligence, Communications",
+                    url: "https://veesion.io/",
+                },
             ],
             slidesProjects: [
                 {
@@ -51,6 +57,12 @@ export default {
                     name: "Alibi detect", 
                     text: "This is a powerful open-source Python library dedicated to outlier, adversarial, and drift detection. This innovative toolset provides a comprehensive range of functionalities to identify anomalies, detect adversarial attacks, and monitor data drift in various domains, with transparency and interpretability.",
                     url : "https://www.seldon.io/solutions/open-source-projects/alibi-detect",
+                },
+                {
+                    img: "_nuxt/images/projects/seldomAndI3E.png",
+                    name: "AI against theft", 
+                    text: "This project empowers businesses to harness the power of AI in preventing theft across various types of stores. By leveraging advanced artificial intelligence technology, Veesion offers a comprehensive solution to detect and deter theft incidents. Join us on this transformative journey to enhance security measures, protect your assets, and create a safer shopping environment.",
+                    url : "https://veesion.io/secteurs/",
                 },
             ],
         }

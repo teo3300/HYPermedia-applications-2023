@@ -65,7 +65,7 @@ export default {
 }
 
 .base-image-input {
-  display: block;
+  display: flex;
   width: 35%;
   aspect-ratio: 1/1;
   align-content: center;
@@ -73,13 +73,14 @@ export default {
 }
 
 img {
-  width: 100%;
+  max-width: 80%;
   object-fit: contain;
 }
 
 .text {
   width: 50%;
   text-align: justify;
+  font-family: 'Cambay', sans-serif;
 }
 
 h3 {

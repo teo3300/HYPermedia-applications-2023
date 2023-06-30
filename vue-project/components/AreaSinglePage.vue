@@ -65,6 +65,7 @@ h1, .breadcrumbs {
 h2 {
     text-align: left;
     margin: 0px 10px;
+    font-family : 'Cambay', sans-serif ; 
 }
 
 .subtitle {

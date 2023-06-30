@@ -36,15 +36,21 @@ export default {
             slidesProjects: [
                 {
                     img: "_nuxt/images/partners/hazylogo.png",
-                    text: "This picture features a guitar placed on a chair, with a black background emphasizing its presence. The dominant colors captured in the image are Sudan Brown, Obsidian, and Cappuccino. According to Google Lens, the closest match for the picture is a 'Guitar Meazzi Orient+Case' priced at 67 euros.",
+                    name : "Case Study: Phase III AAD Trial",
+                    text: "Collaborate with Inato is to access untapped patient populations and identify qualified sites that could enroll patients in short amount of time for various kind of medical research. Discover how partnering with Inato allowed them to meet their trial goals and accelerate their timeline.",
+                    url : "https://inato.com/marketplace-materials/case-study-phase-iii-aad-trial/", 
                 },
                 {
                     img: "_nuxt/images/partners/hazylogo.png",
-                    text: "This close-up picture features the neck of a guitar as its main focus. The dominant colors in the image are AUTUMNAL and CAFE AU LAIT, according to AI analysis. According to Google Lens, the closest match for the picture is a '1950's Gretsch Mahogany Soprano Ukulele'.",
+                    name : "Quantum-inspired physics and AI",
+                    text: "Aqemia combines quantum-inspired physics and AI to revolutionize drug discovery. By harnessing advanced algorithms, they accelerate and enhance the development of life-saving medications. Join us on this transformative journey to reshape the future of pharmaceutical research.",
+                    url : "https://www.aqemia.com/#first_section", 
                 },
                 {
                     img: "_nuxt/images/partners/hazylogo.png",
-                    text: "This picture captures a guitar resting on a chair. The AI identifies the main focus as a guitar with a strap. The dominant colors in the image are WINETASTING, ESTATE BLUE, and COGNAC. According to Google Lens, the closest match for the picture is 'Melody Leather Guitar Strap Headstock Tie Accessories for Guitar.''",
+                    name : "Medical decision",
+                    text: "This project aims to provide invaluable support for medical prescriptions and decisions. Through the integration of advanced technologies and data analysis, we offer an innovative solution that assists healthcare professionals in making informed choices and ensuring optimal patient care.",
+                    url : "https://www.posos.co/solutions/decision-medicale", 
                 },
             ],
         }
