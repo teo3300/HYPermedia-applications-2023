@@ -12,22 +12,11 @@
     </main>
 </template>
 
-<script>
+<script setup>
     const URI = useRuntimeConfig().public.serverURL
         + '/projects'
     console.log('/projects\tFetching: "' + URI + '"')
-    export default defineNuxtComponent({
-        async asyncData() {
-            // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
-            const projects = await $fetch(URI)
-
-            return {
-                projects
-            }
-        }
-    })
-
-
+    const { data: projects } = await useFetch(URI)
 </script>
 
 <style scoped>

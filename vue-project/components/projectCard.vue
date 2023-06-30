@@ -13,7 +13,7 @@
         <NuxtLink :to = "link" class="link">
             <div class="card">
                 <div class="image-container">
-                    <img :src = "`/img/projects/${image}`"
+                    <img :src="`/HYPermedia-applications-2023/img/projects/${image}`"
                          class="img"/>
                 </div>
                 <span class="title">{{ text }}</span>

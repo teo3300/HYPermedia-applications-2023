@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     runtimeConfig: {
         dev: 0,
         public: {
-            serverURL: "http://localhost:3001"
+            serverURL: "http://localhost:3001",
+            baseURL: '/HYPermedia-applications-2023'
         }
     },
     app: {

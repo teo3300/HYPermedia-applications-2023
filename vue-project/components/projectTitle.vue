@@ -14,7 +14,7 @@
                     </p>
                 </div>
             </div>
-            <img :src="`/img/projects/${image}`" alt="Project's image"/>
+            <img :src="`/HYPermedia-applications-2023/img/projects/${image}`" alt="Project's image"/>
         </div>
     </div>
 </template>
@@ -25,7 +25,8 @@
             'name',
             'desc_short',
             'desc_long',
-            'image'
+            'image',
+            'path'
         ]
     }
 </script>
