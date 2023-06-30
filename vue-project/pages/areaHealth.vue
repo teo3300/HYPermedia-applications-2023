@@ -35,19 +35,19 @@ export default {
             ],
             slidesProjects: [
                 {
-                    img: "_nuxt/images/partners/hazylogo.png",
+                    img: "_nuxt/images/projects/inatoAndI3E.png",
                     name : "Case Study: Phase III AAD Trial",
                     text: "Collaborate with Inato is to access untapped patient populations and identify qualified sites that could enroll patients in short amount of time for various kind of medical research. Discover how partnering with Inato allowed them to meet their trial goals and accelerate their timeline.",
                     url : "https://inato.com/marketplace-materials/case-study-phase-iii-aad-trial/", 
                 },
                 {
-                    img: "_nuxt/images/partners/hazylogo.png",
+                    img: "_nuxt/images/projects/aqemiaAndI3E.png",
                     name : "Quantum-inspired physics and AI",
                     text: "Aqemia combines quantum-inspired physics and AI to revolutionize drug discovery. By harnessing advanced algorithms, they accelerate and enhance the development of life-saving medications. Join us on this transformative journey to reshape the future of pharmaceutical research.",
                     url : "https://www.aqemia.com/#first_section", 
                 },
                 {
-                    img: "_nuxt/images/partners/hazylogo.png",
+                    img: "_nuxt/images/projects/pososAndI3E.png",
                     name : "Medical decision",
                     text: "This project aims to provide invaluable support for medical prescriptions and decisions. Through the integration of advanced technologies and data analysis, we offer an innovative solution that assists healthcare professionals in making informed choices and ensuring optimal patient care.",
                     url : "https://www.posos.co/solutions/decision-medicale", 

@@ -59,7 +59,7 @@ export default {
                     url : "https://www.seldon.io/solutions/open-source-projects/alibi-detect",
                 },
                 {
-                    img: "_nuxt/images/projects/seldomAndI3E.png",
+                    img: "_nuxt/images/projects/veesionAndI3E.png",
                     name: "AI against theft", 
                     text: "This project empowers businesses to harness the power of AI in preventing theft across various types of stores. By leveraging advanced artificial intelligence technology, Veesion offers a comprehensive solution to detect and deter theft incidents. Join us on this transformative journey to enhance security measures, protect your assets, and create a safer shopping environment.",
                     url : "https://veesion.io/secteurs/",

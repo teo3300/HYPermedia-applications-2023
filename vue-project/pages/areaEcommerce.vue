@@ -24,7 +24,7 @@ export default {
             ],
             slidesProjects: [
                 {
-                    img: "_nuxt/images/partners/hazylogo.png",
+                    img: "_nuxt/images/projects/relexAndI3E.png",
                     name : "Demand Forecasting",
                     text: "This project specializes in demand forecasting for the retail and consumer goods industry. By leveraging advanced analytics and data-driven insights, Relex provides businesses with accurate predictions and valuable foresight into customer demand. ",
                     url : "https://www.relexsolutions.com/resources/demand-forecasting/", 

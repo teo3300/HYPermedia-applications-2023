@@ -30,13 +30,13 @@ export default {
             ],
             slidesProjects: [
                 {
-                    img: "_nuxt/images/partners/hazylogo.png",
+                    img: "_nuxt/images/projects/recycleyeAndI3E.png",
                     name : "Recycling with robotics", 
                     text: "This project invites you to embrace robotic automation as the next frontier in sorting innovation for recycling. By harnessing cutting-edge robotics technology, Recycleye revolutionizes the recycling process, streamlining sorting operations and increasing efficiency.",
                     url : "https://recycleye.com/solutions/",
                 },
                 {
-                    img: "_nuxt/images/partners/hazylogo.png",
+                    img: "_nuxt/images/projects/wunderAndI3E.png",
                     name:"Solar Energy provider", 
                     text: "This project offers a comprehensive solar energy solution tailored specifically for commercial and industrial real estate. As a dedicated solar energy provider, Wunder enables businesses to harness the power of renewable energy, reducing carbon footprint and energy costs.",
                     url: "https://www.wundercapital.com/", 
