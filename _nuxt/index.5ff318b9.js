@@ -1,1 +1,0 @@
-import{_ as n,a as t}from"./CustomFooter.1eae6ed0.js";import{_ as c,d as s,f as e,o as r}from"./entry.a952133c.js";const a={};function m(d,p){const o=n,_=t;return r(),s("div",null,[e(o),e(_)])}const i=c(a,[["render",m]]);export{i as default};
