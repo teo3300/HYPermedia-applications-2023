@@ -1,0 +1,1 @@
+import{_ as n,a as s}from"./CustomFooter.99e49cc8.js";import{_ as c,d as a,f as o,F as d,o as p,p as r,g as l,e as m}from"./entry.411fb178.js";const u={},f=e=>(r("data-v-d9d366e6"),e=e(),l(),e),i=f(()=>m("main",null,null,-1));function x(e,h){const _=n,t=s;return p(),a(d,null,[o(_),i,o(t)],64)}const g=c(u,[["render",x],["__scopeId","data-v-d9d366e6"]]);export{g as default};
