@@ -1,5 +1,5 @@
 <template>
-        <NuxtLink class="button" :to="`/${link}`"> See more ... </NuxtLink>
+        <NuxtLink class="button" :to="link"> See more ... </NuxtLink>
 </template>
 
 <script>

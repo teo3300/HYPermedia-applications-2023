@@ -1,13 +1,14 @@
 <template>
     <div class="one-area">
             <div class="title-image">
-                <img :src="`${imageURL}`" alt="Illustration image" />
+                <!--<img :src="`${imageURL}`" alt="Illustration image" />-->
+                <img :src="imageURL" alt="Illustration image" />
                 <h2 class="title">{{title}}</h2>
                 <div class="transparent-white"></div>
             </div>
             <div class="intro">
-                <p>{{descriptions}}</p>
-                <seeMore :link="`${pageURL}`"/>
+                <p>{{description}}</p>
+                <seeMore :link="pageURL"/>
             </div>
         </div>
 </template>
@@ -16,17 +17,17 @@
   <script>
   export default {
     props: {
-      imageURL: {
-        type: String,
-        required: true,
-        default: '',
-      },
       title: {
         type: String,
         required: true,
         default: 'Title',
       },
-      descriptions: {
+      imageURL: {
+        type: String,
+        required: true,
+        default: '',
+      },
+      description: {
         type: String,
         required: true,
         default: 'No descriptions',

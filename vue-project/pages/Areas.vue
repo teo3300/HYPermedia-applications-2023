@@ -2,14 +2,22 @@
     <CustomHeader />
     <main>
         <h1>Areas</h1>
-        <div v-for="item in items" :key="item.id">
+        <div v-for = "area of areas">
+        <AreaComponent 
+                :title="area.name"
+                :imageURL="area.data.imgURL"
+                :description="area.data.description"
+                :pageURL="'/areas/' + area.id"/>
+            </div>
+        <!--<div v-for="item in items" :key="item.id">
             <AreaComponent :imageURL="item.imgURL" :title="item.title" :descriptions="item.descriptions" :pageURL="item.pageURL"/>
-        </div>
+        </div>-->
     </main>
     <CustomFooter />
 </template>
 
-<script>
+<script setup>
+/*
 export default {
     data() {
         return {
@@ -45,7 +53,12 @@ export default {
             ],
         }
     }
-} 
+} */
+
+const URI = useRuntimeConfig().public.serverURL
+        + '/areas'
+    console.log('/areas\tFetching: "' + URI + '"')
+    const { data: areas } = await useFetch(URI)
 </script>
 
 <style scoped >
