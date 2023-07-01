@@ -45,7 +45,7 @@
     }
 
     h1 {
-        font-size: 4em;
+        font-size: 3em;
         font-weight: lighter;
         margin: 0px;
         padding: 10px;

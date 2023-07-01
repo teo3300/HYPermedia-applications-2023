@@ -28,7 +28,7 @@
                 <projectCard v-for = "project of projects"
                              :text = "project.name"
                              :image = "project.data.image"
-                             :link = "'/project/' + project.id"/>
+                             :link = "'/projects/' + project.id"/>
             </div>
         </div>
     </main>
