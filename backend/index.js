@@ -29,9 +29,10 @@ app.use(cors(corsOptions))
 
 // #: }}}
 
-function print(data) {
-  console.log('Result:\n' + JSON.stringify(data, null, 4))
-  return data
+function print(req, res) {
+  console.log("@request:\n" + req.originalUrl)
+  console.log('Result:\n' + JSON.stringify(res, null, 4))
+  return res
 }
 
 async function initDB() {
@@ -118,7 +119,7 @@ async function initServer() {
     });
 
     if (data) {
-      res.status(200).json(print(data))
+      res.status(200).json(print(req, data))
     }else {
       res.sendStatus(404)
     }
@@ -134,7 +135,7 @@ async function initServer() {
     });
 
     if (data) {
-      res.status(200).json(print(data))
+      res.status(200).json(print(req, data))
     }else {
       res.sendStatus(404)
     }
@@ -149,7 +150,7 @@ async function initServer() {
     });
 
     if (data) {
-      res.status(200).json(print(data))
+      res.status(200).json(print(req, data))
     }else {
       res.sendStatus(404)
     }
@@ -165,7 +166,7 @@ async function initServer() {
     });
 
     if (data) {
-      res.status(200).json(print(data))
+      res.status(200).json(print(req, data))
     }else {
       res.sendStatus(404)
     }
@@ -184,7 +185,7 @@ async function initServer() {
     });
 
     if (data) {
-      res.status(200).json(print(data))
+      res.status(200).json(print(req, data))
     } else {
       res.sendStatus(404)
     }
@@ -205,7 +206,7 @@ async function initServer() {
     });
 
     if (data) {
-      res.status(200).json(print(data))
+      res.status(200).json(print(req, data))
     } else {
       res.sendStatus(404)
     }
@@ -224,7 +225,7 @@ async function initServer() {
     });
 
     if (data) {
-      res.status(200).json(print(data))
+      res.status(200).json(print(req, data))
     } else {
       res.sendStatus(404)
     }

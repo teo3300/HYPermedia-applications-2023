@@ -2,10 +2,11 @@
 export default async (models) => {
   const personModel = [
     {
-      name: "PLACEHOLDER",
+      name: "Tafazzi Poretti",
       relevance: 1,
       data: {
-        place_holder: "PLACEHOLDER"
+        desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
+        image: 'Tafazzi.jpg'
       }
     }
   ]
@@ -24,7 +25,7 @@ export default async (models) => {
           `Through our intuitive user interface, TechSage offers a comprehensive suite of tools designed to simplify budgeting, expense tracking, and financial goal setting. Users can effortlessly monitor their cash flow, track expenses, and receive proactive alerts to avoid overspending or missed bill payments. Our smart budgeting features provide real-time visibility into spending patterns, helping users identify areas for potential savings and make data-driven decisions to optimize their financial outcomes.`
         ]
       },
-      personId: person0.id
+      PersonId: person0.id
     }
   ]
   const proj0 = await models.Projects.create(projectModel[0])
@@ -214,8 +215,8 @@ export default async (models) => {
       data: {
         place_holder: "PLACEHOLDER"
       },
-      areaId: area0.id,
-      projectId: proj0.id
+      AreaId: area0.id,
+      ProjectId: proj0.id
     }
   ]
   const concern0 = await models.Concern.create(concernModel[0])
