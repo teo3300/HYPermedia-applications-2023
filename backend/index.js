@@ -39,7 +39,7 @@ async function initDB() {
   await db.authenticate()
   // DB structures and relations definition
 // #: Entities structure {{{
-  models.People = db.define('people', {
+  models.People = db.define('People', {
     name: {
       type: DataTypes.STRING,
       allowNull: false
@@ -54,7 +54,7 @@ async function initDB() {
     }
   })
 
-  models.Projects = db.define('projects', {
+  models.Projects = db.define('Projects', {
     name: {
       type: DataTypes.STRING,
       allowNull: false
@@ -69,7 +69,7 @@ async function initDB() {
     }
   })
 
-  models.Areas = db.define('areas', {
+  models.Areas = db.define('Areas', {
     name: {
       type: DataTypes.STRING,
       allowNull: false
@@ -80,7 +80,7 @@ async function initDB() {
     }
   })
 
-  models.Concern = db.define('concern', {
+  models.Concern = db.define('Concern', {
     placeholder: {
       type: DataTypes.JSON,
       allowNull: false
@@ -117,7 +117,11 @@ async function initServer() {
       ]
     });
 
-    res.status(200).json(print(data))
+    if (data) {
+      res.status(200).json(print(data))
+    }else {
+      res.sendStatus(404)
+    }
   })
   
   // #: }}}
@@ -126,10 +130,14 @@ async function initServer() {
     const data = await models.Projects.findAll({
       order: [
         ['name', 'ASC'],
-      ]
+      ],
     });
 
-    res.status(200).json(print(data))
+    if (data) {
+      res.status(200).json(print(data))
+    }else {
+      res.sendStatus(404)
+    }
   })
   // #: }}}
   // #: All areas, sorted alphabetically {{{
@@ -140,53 +148,38 @@ async function initServer() {
       ]
     });
 
-    res.status(200).json(print(data))
+    if (data) {
+      res.status(200).json(print(data))
+    }else {
+      res.sendStatus(404)
+    }
   })
   // #: }}}
   // #: Top projects, sorted by relevance {{{
   app.get('/projects/top', async(req, res) => {
-    const data = await models.projects.findAll({
-      order: [
-        ['relevace', 'DESC'],
-      ],
-      limit: 5
-    });
-    
-    res.status(200).json(print(data))
-  })
-  // #: }}}
-  // #: Projects by area, sorted alphabetically {{{
-  // TODO: consider switching from name to ID to find projects
-  app.get('/projects_by_area/:id', async(req, res) => {
     const data = await models.Projects.findAll({
       order: [
-        ['name', 'ASC'],
+        ['relevance', 'DESC'],
       ],
-      include: [{
-        model: Areas,
-        required: true,
-        where: {id : req.params.id}
-      }]
+      limit: 5
     });
 
     if (data) {
       res.status(200).json(print(data))
-    } else {
+    }else {
       res.sendStatus(404)
     }
   })
   // #: }}}
   // #: Specific person, givenen ID, include all infos about related projects, sorted alphabetically {{{
-  app.get('/people/:id', async(req, res) => {
+  app.get('/person/:id', async(req, res) => {
     const data = await models.People.findOne({
-      where: {
-        id: req.params.id
-      },
+      where: { id: req.params.id },
+      order: [
+        ['name', 'ASC'],
+      ],
       include: [{
         model: models.Projects,
-        order: [
-          ['name', 'ASC'],
-        ]
       }]
     });
 
@@ -197,15 +190,19 @@ async function initServer() {
     }
   })
   // #: }}}
-  // #: Specific project, given ID, include all infos of the supervisor {{{
+  // #: Specific project, given ID, include all infos of the supervisor and related areas {{{
   app.get('/project/:id', async(req, res) => {
     const data = await models.Projects.findOne({
-      where: {
-        id: req.params.id
-      }
+      where: { id: req.params.id },
+      order: [
+        ['name', 'ASC']
+      ],
+      include: [{
+        model: models.Areas,
+      },{
+        model: models.People,
+      }]
     });
-
-    print(data)
 
     if (data) {
       res.status(200).json(print(data))
@@ -215,11 +212,15 @@ async function initServer() {
   })
   // #: }}}
   // #: Specific area, given ID {{{
-  app.get('/areas/:id', async(req, res) => {
+  app.get('/area/:id', async(req, res) => {
     const data = await models.Areas.findOne({
-      where: {
-        id: req.params.id
-      }
+      where: { id: req.params.id },
+      order: [
+        ['name', 'ASC']
+      ],
+      include: [{
+        model: models.Projects,
+      }]
     });
 
     if (data) {
@@ -228,10 +229,11 @@ async function initServer() {
       res.sendStatus(404)
     }
   })
-      // Using a different port
-    app.listen(3001, () => {
-        console.log("Listening on port 3001")
-    })
+
+  // Using a different port
+  app.listen(3001, () => {
+    console.log("Listening on port 3001")
+  })
   // #: }}}
 }
 
