@@ -2,10 +2,10 @@
   <transition :name="transitionEffect">
     <div class="carousel-item" v-show="currentSlide === index">
       <!--<div v-if="" ></div>-->
-      <div class="base-image-input"> <img :src="`${slide.img}`" /> </div>
+      <div class="base-image-input"> <img :src="`${slide.image}`" /> </div>
       <div class="text">
         <h3>{{ slide.name }}</h3>
-        <p>{{ slide.text }}</p>
+        <p>{{ slide.desc_short }}</p>
         <a :href="`${slide.url}`">Learn more</a>
       </div>
 

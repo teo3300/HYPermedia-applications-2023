@@ -6,7 +6,7 @@
                 :imageURL="area.data.imgURL" 
                 :description="area.data.summary" 
                 :slidesPartners="area.data.slidesPartners" 
-                :slidesProjects="area.data.slidesProjects"/>
+                :slidesProjects="area.data.areaProjects"/>
         <customFooter></customFooter>
     </main>
 </template>
