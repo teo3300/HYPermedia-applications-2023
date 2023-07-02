@@ -15,19 +15,26 @@
             :desc_short = "proj.Person.data.desc_short"
             :image = "proj.Person.data.image"
             :link = "'/person/' + proj.Person.id"/> <!-- TODO: Yet to be defined name of the link -->
+        <div class="related-areas">
+            <h2>Related areas</h2>
+            <div class="carousel-container">
+                <Carousel class="carousel"
+                    />
+            </div>
+        </div>
         <customFooter></customFooter>
     </main>
 </template>
 
 <script setup>
+
     const route = useRoute()
     const id = route.params.id
     const URI = useRuntimeConfig().public.serverURL
-        + '/project/'
-        + id
-    console.log('/project/' + id + '\tFetching: "' + URI + '"')
-    const {data: proj } =
-        await useFetch(URI)
+              + '/projects/'
+              + id
+    console.log('/projects/' + id + '\tFetching: "' + URI + '"')
+    const {data: proj } = await useFetch(URI)
                 /*{
                     id: 1,
                     imgURL: '_nuxt/images/technologyAndSoftware.jpg',
@@ -38,4 +45,18 @@
 </script>
 
 <style>
+    .related-areas {
+        background-color: #5BC0BE;
+        margin-bottom: 20px;
+    }
+
+    .related-areas h2 {
+        font-weight: lighter;
+        padding: 40px;
+        font-size: 2em;
+    }
+
+    .carousel {
+        max-width: 80%;
+    }
 </style>
