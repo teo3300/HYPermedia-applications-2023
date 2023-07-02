@@ -1,0 +1,1 @@
+import{_ as o,c as t,a as e,o as c,d as s,e as a}from"./entry.d260f356.js";const r={};function d(m,u){const n=s,_=a;return c(),t("div",null,[e(n),e(_)])}const l=o(r,[["render",d]]);export{l as default};

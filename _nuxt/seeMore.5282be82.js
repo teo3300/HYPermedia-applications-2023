@@ -1,0 +1,1 @@
+import{_,o,m as n,w as c,h as s,i as a}from"./entry.d260f356.js";const r={props:["link"]};function p(i,u,e,d,x,l){const t=a;return o(),n(t,{class:"button",to:e.link},{default:c(()=>[s(" See more ... ")]),_:1},8,["to"])}const f=_(r,[["render",p],["__scopeId","data-v-b43c2652"]]);export{f as _};
