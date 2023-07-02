@@ -146,7 +146,10 @@ async function initServer() {
     const data = await models.Areas.findAll({
       order: [
         ['name', 'ASC'],
-      ]
+      ],
+      include: [{
+        model: models.Projects
+      }]
     });
 
     if (data) {
@@ -172,15 +175,15 @@ async function initServer() {
     }
   })
   // #: }}}
-  // #: Specific person, givenen ID, include all infos about related projects, sorted alphabetically {{{
-  app.get('/person/:id', async(req, res) => {
+  // #: Specific person, given ID, include all infos about related projects, sorted alphabetically {{{
+  app.get('/people/:id', async(req, res) => {
     const data = await models.People.findOne({
       where: { id: req.params.id },
       order: [
         ['name', 'ASC'],
       ],
       include: [{
-        model: models.Projects,
+        model: models.Projects
       }]
     });
 
@@ -192,7 +195,7 @@ async function initServer() {
   })
   // #: }}}
   // #: Specific project, given ID, include all infos of the supervisor and related areas {{{
-  app.get('/project/:id', async(req, res) => {
+  app.get('/projects/:id', async(req, res) => {
     const data = await models.Projects.findOne({
       where: { id: req.params.id },
       order: [
@@ -213,7 +216,7 @@ async function initServer() {
   })
   // #: }}}
   // #: Specific area, given ID {{{
-  app.get('/area/:id', async(req, res) => {
+  app.get('/areas/:id', async(req, res) => {
     const data = await models.Areas.findOne({
       where: { id: req.params.id },
       order: [
