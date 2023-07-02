@@ -1,22 +1,30 @@
 <template>
   <transition :name="transitionEffect">
     <div class="carousel-item" v-show="currentSlide === index">
-      <!--<div v-if="" ></div>-->
-      <div class="base-image-input"> <img :src="`${slide.image}`" /> </div>
-      <div class="text">
-        <h3>{{ slide.name }}</h3>
-        <p>{{ slide.desc_short }}</p>
-        <a :href="`${slide.url}`">Learn more</a>
+      <div v-if="option === 'partnerOption'" class="if">
+        <div class="base-image-input"> <img :src="`${slide.image}`" /> </div>
+        <div class="text">
+          <h3>{{ slide.name }}</h3>
+          <p>{{ slide.desc_short }}</p>
+          <a :href="`${slide.url}`">Learn more</a>
+        </div>
       </div>
-
+      <div v-else-if="option === 'projectOption'" class="if">
+        <div class="base-image-input"> <img :src="`/HYPermedia-applications-2023/img/projects/${slide.data.image}`" /> </div>
+        <div class="text">
+          <h3>{{ slide.name }}</h3>
+          <p>{{ slide.data.desc_short }}</p>
+          <a :href="`${slide.data.url}`">Learn more</a>
+        </div>
+      </div>
+      <div v-else> no option given </div>
     </div>
-
   </transition>
 </template>
   
 <script>
 export default {
-  props: ["slide", "currentSlide", "index", "direction", "link"],
+  props: ["slide", "currentSlide", "index", "direction", "link", "option"],
   computed: {
     transitionEffect() {
       return this.direction == "right" ? "slide-out" : "slide-in";
@@ -39,6 +47,9 @@ export default {
   width: 100%;
   gap: 5%;
   padding: 2%;
+}
+.if {
+  width : 100%; display: flex;
 }
 
 .slide-in-enter-active,
@@ -90,7 +101,7 @@ h3 {
 
 a {
   color: #5BC0BE;
-  margin-left: 40% ;
+  margin-left: 40%;
 }
 
 a:hover {

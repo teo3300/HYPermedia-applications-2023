@@ -2,7 +2,7 @@
   <div >
     <div class="carousel-inner">
       <carousel-item v-for="(slide, index) in slides" :slide="slide" :key="`item-${index}`" :current-slide="currentSlide"
-        :index="index" :direction="direction" ></carousel-item>
+        :index="index" :direction="direction" :option="option"></carousel-item>
     </div>
     <carousel-controls @prev="prev" @next="next"></carousel-controls>
   </div>
@@ -11,7 +11,7 @@
 <script>
 
 export default {
-  props: ['slides'],
+  props: ['slides', 'option'],
   data: () => ({
     currentSlide: 0,
     slideInterval: null,

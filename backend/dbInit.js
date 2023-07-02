@@ -295,8 +295,101 @@ export default async (models) => {
         place_holder: "PLACEHOLDER"
       },
       AreaId: area0.id,
-      ProjectId: proj0.id
-    }
+      ProjectId: proj0.id,
+    }, 
+    {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
+      AreaId: area0.id,
+      ProjectId: proj1.id,
+    },
+    {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
+      AreaId: area0.id,
+      ProjectId: proj2.id,
+    },
+    {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
+      AreaId: area0.id,
+      ProjectId: proj3.id,
+    },
+    {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
+      AreaId: area0.id,
+      ProjectId: proj4.id,
+    },
+    {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
+      AreaId: area1.id,
+      ProjectId: proj5.id,
+    },
+    {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
+      AreaId: area1.id,
+      ProjectId: proj6.id,
+    },
+    {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
+      AreaId: area1.id,
+      ProjectId: proj7.id,
+    },
+    {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
+      AreaId: area2.id,
+      ProjectId: proj8.id,
+    },
+    {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
+      AreaId: area2.id,
+      ProjectId: proj9.id,
+    },
+    {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
+      AreaId: area3.id,
+      ProjectId: proj10.id,
+    },
+
+
   ]
   const concern0 = await models.Concern.create(concernModel[0])
+  const concern1 = await models.Concern.create(concernModel[1])
+  const concern2 = await models.Concern.create(concernModel[2])
+  const concern3 = await models.Concern.create(concernModel[3])
+  const concern4 = await models.Concern.create(concernModel[4])
+  const concern5 = await models.Concern.create(concernModel[5])
+  const concern6 = await models.Concern.create(concernModel[6])
+  const concern7 = await models.Concern.create(concernModel[7])
+  const concern8 = await models.Concern.create(concernModel[8])
+  const concern9 = await models.Concern.create(concernModel[9])
+  const concern10 = await models.Concern.create(concernModel[10])
+
 }
