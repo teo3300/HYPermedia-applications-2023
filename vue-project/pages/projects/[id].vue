@@ -14,7 +14,7 @@
             :name = "proj.Person.name"
             :desc_short = "proj.Person.data.desc_short"
             :image = "proj.Person.data.image"
-            :link = "'/person/' + proj.Person.id"/> <!-- TODO: Yet to be defined name of the link -->
+            :link = "'/people/' + proj.Person.id"/> <!-- TODO: Yet to be defined name of the link -->
         <div class="related-areas">
             <h2>Related areas</h2>
             <div class="carousel-container">

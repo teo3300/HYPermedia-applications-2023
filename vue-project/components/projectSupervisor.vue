@@ -39,7 +39,6 @@
         display: flex;
         flex-flow: row;
         color: #1C2541;
-        font-family: 'Cambay', sans-serif;
     }
 
     .image-container {

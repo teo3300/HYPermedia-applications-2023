@@ -1,4 +1,3 @@
-<!--    About us page    -->
 <template>
     <CustomHeader></CustomHeader>
     <main>
