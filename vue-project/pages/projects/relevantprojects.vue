@@ -51,8 +51,8 @@ h1{
     align-items: flex-end;
     width:fit-content;
     height:auto;
-   
     text-align: center;
+    align-items: center;
 }
 
 #projec2>p{
@@ -62,7 +62,9 @@ h1{
     width:600px;
     height:auto;
     text-align: center;
+    align-items: center;
     padding: 40px;
+   
 }
 
 #projec1>img{
