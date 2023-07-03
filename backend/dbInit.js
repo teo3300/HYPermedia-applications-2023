@@ -11,22 +11,9 @@ export default async (models) => {
     }
   ]
 
-  const person0 = await models.People.create(personModel[0])
+  const giacomino = await models.People.create(personModel[0])
 
   const projectModel = [
-    {
-      name: "TechSage",
-      relevance: 1,
-      data: {
-        image: 'TechSage.jpg',
-        desc_short: 'An innovative tech project focused on leveraging artificial intelligence and machine learning to revolutionize the way people manage their personal finances.',
-        desc_long: [
-          `At TechSage, we recognize that managing personal finances can often be complex, time-consuming, and overwhelming. Our platform addresses these challenges by harnessing the potential of AI and ML algorithms to deliver personalized financial insights and recommendations. By analyzing individual spending patterns, income sources, and savings goals, our intelligent system generates customized plans that adapt to each user's unique financial situation.`,
-          `Through our intuitive user interface, TechSage offers a comprehensive suite of tools designed to simplify budgeting, expense tracking, and financial goal setting. Users can effortlessly monitor their cash flow, track expenses, and receive proactive alerts to avoid overspending or missed bill payments. Our smart budgeting features provide real-time visibility into spending patterns, helping users identify areas for potential savings and make data-driven decisions to optimize their financial outcomes.`
-        ]
-      },
-      PersonId: person0.id
-    },
     {
       name: "Synthetic data",
       relevance: 1,
@@ -38,11 +25,11 @@ export default async (models) => {
         ], 
         url: "https://hazy.com/resources/2023/06/01/the-state-of-synthetic-data",
       },
-      PersonId: person0.id
+      PersonId: giacomino.id
     },
     {
       name: "AI factory",
-      relevance: 1,
+      relevance: 3,
       data: {
         image: 'preligensAndI3E.png',
         desc_short: 'This is a game-changing project, featuring a multi-intelligence, AI-enabled operating system. This innovative platform addresses complex intelligence problems by seamlessly integrating cutting-edge technologies like machine learning, natural language processing, computer vision, and predictive analytics.',
@@ -51,11 +38,11 @@ export default async (models) => {
         ], 
         url: "https://preligens.com/products/ai-factory",
       },
-      PersonId: person0.id
+      PersonId: giacomino.id
     },
     {
       name: "Alibi detect",
-      relevance: 1,
+      relevance: 2,
       data: {
         image: 'seldomAndI3E.png',
         desc_short: 'This is a powerful open-source Python library dedicated to outlier, adversarial, and drift detection. This innovative toolset provides a comprehensive range of functionalities to identify anomalies, detect adversarial attacks, and monitor data drift in various domains, with transparency and interpretability.',
@@ -64,11 +51,11 @@ export default async (models) => {
         ], 
         url: "https://www.seldon.io/solutions/open-source-projects/alibi-detect",
       },
-      PersonId: person0.id
+      PersonId: giacomino.id
     }, 
     {
       name: "AI against theft",
-      relevance: 1,
+      relevance: 4,
       data: {
         image: 'veesionAndI3E.png',
         desc_short: 'This project empowers businesses to harness the power of AI in preventing theft across various types of stores. By leveraging advanced artificial intelligence technology, Veesion offers a comprehensive solution to detect and deter theft incidents. Join us on this transformative journey to enhance security measures, protect your assets, and create a safer shopping environment.',
@@ -77,11 +64,11 @@ export default async (models) => {
         ],
         url: "https://veesion.io/secteurs/",
       },
-      PersonId: person0.id
+      PersonId: giacomino.id
     }, 
     {
       name: "Case Study: Phase III AAD Trial",
-      relevance: 1,
+      relevance: 5,
       data: {
         image: 'inatoAndI3E.png',
         desc_short: 'Collaborate with Inato is to access untapped patient populations and identify qualified sites that could enroll patients in short amount of time for various kind of medical research. Discover how partnering with Inato allowed them to meet their trial goals and accelerate their timeline.',
@@ -90,11 +77,11 @@ export default async (models) => {
         ],
         url: "https://inato.com/marketplace-materials/case-study-phase-iii-aad-trial/",
       },
-      PersonId: person0.id
+      PersonId: giacomino.id
     }, 
     {
       name: "Quantum-inspired physics and AI",
-      relevance: 1,
+      relevance: 7,
       data: {
         image: 'aqemiaAndI3E.png',
         desc_short: 'Aqemia combines quantum-inspired physics and AI to revolutionize drug discovery. By harnessing advanced algorithms, they accelerate and enhance the development of life-saving medications. Join us on this transformative journey to reshape the future of pharmaceutical research.',
@@ -103,11 +90,11 @@ export default async (models) => {
         ],
         url: "https://www.aqemia.com/#first_section",
       },
-      PersonId: person0.id
+      PersonId: giacomino.id
     }, 
     {
       name: "Medical decision help",
-      relevance: 1,
+      relevance: 6,
       data: {
         image: 'pososAndI3E.png',
         desc_short: 'This project aims to provide invaluable support for medical prescriptions and decisions. Through the integration of advanced technologies and data analysis, we offer an innovative solution that assists healthcare professionals in making informed choices and ensuring optimal patient care.',
@@ -116,11 +103,11 @@ export default async (models) => {
         ],
         url: "https://www.posos.co/solutions/decision-medicale",
       },
-      PersonId: person0.id
+      PersonId: giacomino.id
     },
     {
       name: "Recycling with robotics",
-      relevance: 1,
+      relevance: 8,
       data: {
         image: 'recycleyeAndI3E.png',
         desc_short: 'This project invites you to embrace robotic automation as the next frontier in sorting innovation for recycling. By harnessing cutting-edge robotics technology, Recycleye revolutionizes the recycling process, streamlining sorting operations and increasing efficiency.',
@@ -129,11 +116,11 @@ export default async (models) => {
         ],
         url: "https://recycleye.com/solutions/",
       },
-      PersonId: person0.id
+      PersonId: giacomino.id
     },
     {
       name: "Solar Energy provider",
-      relevance: 1,
+      relevance: 9,
       data: {
         image: 'wunderAndI3E.png',
         desc_short: 'This project offers a comprehensive solar energy solution tailored specifically for commercial and industrial real estate. As a dedicated solar energy provider, Wunder enables businesses to harness the power of renewable energy, reducing carbon footprint and energy costs.',
@@ -142,11 +129,11 @@ export default async (models) => {
         ],
         url: "https://www.wundercapital.com/",
       },
-      PersonId: person0.id
+      PersonId: giacomino.id
     },
     {
       name: "Demand Forecasting",
-      relevance: 1,
+      relevance: 11,
       data: {
         image: 'relexAndI3E.png',
         desc_short: 'This project specializes in demand forecasting for the retail and consumer goods industry. By leveraging advanced analytics and data-driven insights, Relex provides businesses with accurate predictions and valuable foresight into customer demand.',
@@ -155,21 +142,20 @@ export default async (models) => {
         ],
         url: "https://www.relexsolutions.com/resources/demand-forecasting/",
       },
-      PersonId: person0.id
+      PersonId: giacomino.id
     },
 
   ]
-  const proj0 = await models.Projects.create(projectModel[0]) // techsage
-  const proj1 = await models.Projects.create(projectModel[1]) // hazy : synthetic data 
-  const proj2 = await models.Projects.create(projectModel[2]) // preligens : ai factory
-  const proj3 = await models.Projects.create(projectModel[3]) // seldom : alibi detect
-  const proj4 = await models.Projects.create(projectModel[4]) // veesion : ai againt theft
-  const proj5 = await models.Projects.create(projectModel[5]) // inato : case study 
-  const proj6 = await models.Projects.create(projectModel[6]) // aqemia : quantum and ai
-  const proj7 = await models.Projects.create(projectModel[7]) // posos : medical decision
-  const proj8 = await models.Projects.create(projectModel[8]) // recycleye : recycling with robots
-  const proj9 = await models.Projects.create(projectModel[9]) // wunder : solar energy
-  const proj10 = await models.Projects.create(projectModel[10]) // relex : demand forecasting
+  const hazy = await models.Projects.create(projectModel[0]) // hazy : synthetic data
+  const preligens = await models.Projects.create(projectModel[1]) // preligens : ai factory
+  const seldom = await models.Projects.create(projectModel[2]) // seldom : alibi detect
+  const veesion = await models.Projects.create(projectModel[3]) // veesion : ai againt theft
+  const inato = await models.Projects.create(projectModel[4]) // inato : case study
+  const aqemia = await models.Projects.create(projectModel[5]) // aqemia : quantum and ai
+  const posos = await models.Projects.create(projectModel[6]) // posos : medical decision
+  const recycleye = await models.Projects.create(projectModel[7]) // recycleye : recycling with robots
+  const wunder = await models.Projects.create(projectModel[8]) // wunder : solar energy
+  const relex = await models.Projects.create(projectModel[9]) // relex : demand forecasting
 
 
 
@@ -207,7 +193,7 @@ export default async (models) => {
             url: "https://veesion.io/",
           },
         ],
-        areaProjects : [proj0.id, proj1.id, proj2.id, proj3.id, proj4.id],
+        areaProjects : [hazy.id, preligens.id, seldom.id, veesion.id],
       }
     },
     {
@@ -237,7 +223,7 @@ export default async (models) => {
             url: "https://www.posos.co/",
           },
         ],
-        areaProjects : [proj5.id, proj6.id, proj7.id],
+        areaProjects : [inato.id, aqemia.id, posos.id],
       }
     },
     {
@@ -261,7 +247,7 @@ export default async (models) => {
             url: "https://www.wundercapital.com/",
           },
         ],
-        areaProjects : [proj8.id, proj9.id],
+        areaProjects : [recycleye.id, wunder.id],
       }
     },
     {
@@ -279,14 +265,14 @@ export default async (models) => {
             url: "https://www.relexsolutions.com/",
           },
         ],
-        areaProjects : [proj10.id],
+        areaProjects : [relex.id],
       }
     },
   ]
-  const area0 = await models.Areas.create(areaModel[0])
-  const area1 = await models.Areas.create(areaModel[1])
-  const area2 = await models.Areas.create(areaModel[2])
-  const area3 = await models.Areas.create(areaModel[3])
+  const tech_sw = await models.Areas.create(areaModel[0])
+  const heal_bio = await models.Areas.create(areaModel[1])
+  const ene_sus = await models.Areas.create(areaModel[2])
+  const com_goods = await models.Areas.create(areaModel[3])
 
   const concernModel = [
     {
@@ -294,102 +280,89 @@ export default async (models) => {
       data: {
         place_holder: "PLACEHOLDER"
       },
-      AreaId: area0.id,
-      ProjectId: proj0.id,
-    }, 
-    {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
-      AreaId: area0.id,
-      ProjectId: proj1.id,
+      AreaId: tech_sw.id,
+      ProjectId: hazy.id,
     },
     {
       placeholder: "PLACEHOLDER",
       data: {
         place_holder: "PLACEHOLDER"
       },
-      AreaId: area0.id,
-      ProjectId: proj2.id,
+      AreaId: tech_sw.id,
+      ProjectId: preligens.id,
     },
     {
       placeholder: "PLACEHOLDER",
       data: {
         place_holder: "PLACEHOLDER"
       },
-      AreaId: area0.id,
-      ProjectId: proj3.id,
+      AreaId: tech_sw.id,
+      ProjectId: seldom.id,
     },
     {
       placeholder: "PLACEHOLDER",
       data: {
         place_holder: "PLACEHOLDER"
       },
-      AreaId: area0.id,
-      ProjectId: proj4.id,
+      AreaId: tech_sw.id,
+      ProjectId: veesion.id,
     },
     {
       placeholder: "PLACEHOLDER",
       data: {
         place_holder: "PLACEHOLDER"
       },
-      AreaId: area1.id,
-      ProjectId: proj5.id,
+      AreaId: heal_bio.id,
+      ProjectId: inato.id,
     },
     {
       placeholder: "PLACEHOLDER",
       data: {
         place_holder: "PLACEHOLDER"
       },
-      AreaId: area1.id,
-      ProjectId: proj6.id,
+      AreaId: heal_bio.id,
+      ProjectId: aqemia.id,
     },
     {
       placeholder: "PLACEHOLDER",
       data: {
         place_holder: "PLACEHOLDER"
       },
-      AreaId: area1.id,
-      ProjectId: proj7.id,
+      AreaId: heal_bio.id,
+      ProjectId: posos.id,
     },
     {
       placeholder: "PLACEHOLDER",
       data: {
         place_holder: "PLACEHOLDER"
       },
-      AreaId: area2.id,
-      ProjectId: proj8.id,
+      AreaId: ene_sus.id,
+      ProjectId: recycleye.id,
     },
     {
       placeholder: "PLACEHOLDER",
       data: {
         place_holder: "PLACEHOLDER"
       },
-      AreaId: area2.id,
-      ProjectId: proj9.id,
+      AreaId: ene_sus.id,
+      ProjectId: wunder.id,
     },
     {
       placeholder: "PLACEHOLDER",
       data: {
         place_holder: "PLACEHOLDER"
       },
-      AreaId: area3.id,
-      ProjectId: proj10.id,
+      AreaId: com_goods.id,
+      ProjectId: relex.id,
     },
-
-
+    {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
+      AreaId: ene_sus.id,
+      ProjectId: relex.id
+    }
   ]
-  const concern0 = await models.Concern.create(concernModel[0])
-  const concern1 = await models.Concern.create(concernModel[1])
-  const concern2 = await models.Concern.create(concernModel[2])
-  const concern3 = await models.Concern.create(concernModel[3])
-  const concern4 = await models.Concern.create(concernModel[4])
-  const concern5 = await models.Concern.create(concernModel[5])
-  const concern6 = await models.Concern.create(concernModel[6])
-  const concern7 = await models.Concern.create(concernModel[7])
-  const concern8 = await models.Concern.create(concernModel[8])
-  const concern9 = await models.Concern.create(concernModel[9])
-  const concern10 = await models.Concern.create(concernModel[10])
-
+  await models.Concern.bulkCreate(concernModel)
 }
