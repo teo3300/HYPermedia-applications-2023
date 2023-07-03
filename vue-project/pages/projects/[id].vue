@@ -61,15 +61,12 @@
     }
 
     .carousel-outer {
-        margin: auto;
+        padding : 10px 10% ;
     }
 
-    .carousel-inner {
-
-    }
 
     .carouselArea {
-        width: 80%;
+        width: 100%;
         height: 350px;
     }
 

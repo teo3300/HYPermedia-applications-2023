@@ -107,6 +107,7 @@
 
     .carouselProject {
         width: 80%;
+        padding : 10px 10% ; 
         height: 350px;
     }
 
