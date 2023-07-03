@@ -9,16 +9,17 @@
 -->
 
 <template>
-    <main>
-        <div class="card">
-            <NuxtLink :to = "link" class="link">
-                <div class="image-container">
-                    <img :src="`/HYPermedia-applications-2023/img/projects/${image}`"
-                         class="img"/>
-                </div>
-                <span class="title">{{ text }}</span>
-            </NuxtLink>
-        </div>
+    <main class="card">
+        <NuxtLink :to = "link" class="link">
+            <div class="image-container">
+                <img class="img"
+                     :src="`/HYPermedia-applications-2023/img/projects/${image}`"/>
+            </div>
+            <div class="bar"></div>
+            <span class="text">
+                {{ text }}
+            </span>
+        </NuxtLink>
     </main>
 </template>
 
@@ -34,47 +35,41 @@
 
 <style scoped>
 
-    .link {
-        text-decoration: none;
-        color: white;
+    .card {
+        width: 21%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: white;
+        margin: 10px;
+        padding-bottom: 8px;
     }
 
-    .image-container {
-        display: flex;
-        justify-content: center;
-        border-radius: 3px;
-        max-width: 250px;
-        aspect-ratio: 3/2;
-        overflow: hidden;
-        margin-bottom: 6px;
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+        transform: scale(1.1);
     }
 
     .img {
-        vertical-align: middle;
-        max-width: 100%;
-        width: auto;
-        margin: auto;
-        transform: translateY(-33%);
+        width: 100%;
+        object-fit: cover;
     }
 
-    .card {
-        display: flex;
-        flex-flow: column;
-        padding: 6px;
-        border-radius: 6px;
-        width: fit-content;
-        height: fit-content;
-        background-color: #3A506B;
-    }
-
-    .image-container:hover {
-        width: 280px;
-    }
-
-
-    .card {
-        font-size: 1.5em;
+    .link {
+        color: #000;
         text-align: center;
+        text-decoration: none;
+    }
+
+    .bar {
+        width: 80%;
+        height: 0px;
+        border: solid 1px #5BC0BE;
+        margin: auto;
+        margin-bottom: 8px;
+    }
+
+    .text {
+        padding: 8px;
     }
 
 </style>

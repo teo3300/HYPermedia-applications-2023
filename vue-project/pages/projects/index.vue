@@ -11,8 +11,8 @@
                     that encapsulate the pinnacle of our achievements
                     thus far.</p>
             </div>
-            <h2>== I STILL NEED TO PUT A CAROUSEL HERE ==</h2>
-           <!-- <Carousel/> TODO: integrate carousel with DB -->
+            <Carousel option="projectOption" class="carouselProject"
+                :slides="top_proj"/>
         </div>
         <div id="card-title">
             <h2>All projects</h2>
@@ -40,6 +40,11 @@
         + '/projects'
     console.log('/projects\tFetching: "' + URI + '"')
     const { data: projects } = await useFetch(URI)
+
+    const TOP = useRuntimeConfig().public.serverURL
+        + '/projects/top'
+    console.log('/projects\tFetching: "' + TOP + '"')
+    const { data: top_proj } = await useFetch(TOP)
 </script>
 
 <style scoped>
@@ -83,9 +88,6 @@
         background: #5BC0BE;
         padding: 20px 0;
     }
-    #top-section {
-        text-align: center;
-    }
 
     #card-container-outer {
         padding: 20px 0 20px 40px;
@@ -100,5 +102,17 @@
         gap: 20px;
         background-color: #6FFFE9;
         padding: 20px 40px 20px 0;
+        border-radius: 20px 0 0 20px;
     }
+
+    .carouselProject {
+        width: 80%;
+        height: 350px;
+    }
+
+    .carousel-item {
+        background-color: white;
+        border:
+    }
+
 </style>

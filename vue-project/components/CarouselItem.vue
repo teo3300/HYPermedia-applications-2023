@@ -17,6 +17,15 @@
           <a :href="`${slide.data.url}`">Learn more</a>
         </div>
       </div>
+      <div v-else-if="option === 'areaOption'" class="if">
+        <div class="base-image-input">
+          <img :src="`${slide.data.imgURL}`" /> </div>
+        <div class="text">
+          <h3>{{ slide.name }}</h3>
+          <p>{{ slide.data.summary }}</p>
+          <a :href="`${slide.data.url}`">Learn more</a>
+        </div>
+      </div>
       <div v-else> no option given </div>
     </div>
   </transition>

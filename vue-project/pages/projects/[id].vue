@@ -17,9 +17,11 @@
             :link = "'/people/' + proj.Person.id"/> <!-- TODO: Yet to be defined name of the link -->
         <div class="related-areas">
             <h2>Related areas</h2>
-            <div class="carousel-container">
-                <Carousel class="carousel"
-                    />
+            <div class="carousel-outer">
+                <div class="carousel-inner">
+                    <Carousel option="areaOption" class="carouselArea"
+                              :slides="proj.Areas"/>
+                </div>
             </div>
         </div>
         <customFooter></customFooter>
@@ -47,7 +49,9 @@
 <style>
     .related-areas {
         background-color: #5BC0BE;
+        color: #1C2541;
         margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 
     .related-areas h2 {
@@ -56,7 +60,22 @@
         font-size: 2em;
     }
 
-    .carousel {
-        max-width: 80%;
+    .carousel-outer {
+        margin: auto;
     }
+
+    .carousel-inner {
+
+    }
+
+    .carouselArea {
+        width: 80%;
+        height: 350px;
+    }
+
+    .carousel-item {
+        background-color: white;
+        border:
+    }
+
 </style>
