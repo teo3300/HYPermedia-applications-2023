@@ -4,7 +4,7 @@
         <h1>Projects</h1>
         <div id="top-section">
             <div id="top-title">
-                <h2>Top projects</h2>
+                <NuxtLink to="/projects/relevantprojects" class="nav-item"><h2>Top projects</h2></NuxtLink>
                 <p>We present to you a meticulously curated
                     assortment of our most significant, highly
                     triumphant, and exceedingly ambitious undertakings
