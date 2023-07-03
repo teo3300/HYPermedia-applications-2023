@@ -58,7 +58,8 @@
         background: #3A506B;
         color: white;
         margin-left: 30px;
-        border-radius: 20px 0 0 20px;
+        border: 2px solid white;
+        border-right: 0;
     }
 
     #title-section {
