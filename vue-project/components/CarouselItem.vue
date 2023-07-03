@@ -23,7 +23,7 @@
         <div class="text">
           <h3>{{ slide.name }}</h3>
           <p>{{ slide.data.summary }}</p>
-          <a :href="`${slide.data.url}`">Learn more</a>
+          <NuxtLink :to="`/areas/${slide.id}`">Learn more</NuxtLink>
         </div>
       </div>
       <div v-else> no option given </div>
