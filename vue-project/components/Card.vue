@@ -36,12 +36,13 @@
 <style scoped>
 
     .card {
-        width: 21%;
+        width: 22%;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         background-color: white;
-        margin: 10px;
+        margin: 5px;
         padding-bottom: 8px;
+        text-align: center;
     }
 
     .card:hover {
@@ -56,7 +57,6 @@
 
     .link {
         color: #000;
-        text-align: center;
         text-decoration: none;
     }
 

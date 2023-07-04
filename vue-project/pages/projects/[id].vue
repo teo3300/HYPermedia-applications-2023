@@ -10,13 +10,16 @@
             :desc_short = "proj.data.desc_short"
             :desc_long = "proj.data.desc_long"
             :image = "proj.data.image"/>
+        <Subtitle
+            text="supervisor"/>
         <projectSupervisor
             :name = "proj.Person.name"
             :desc_short = "proj.Person.data.desc_short"
             :image = "proj.Person.data.image"
             :link = "'/people/' + proj.Person.id"/> <!-- TODO: Yet to be defined name of the link -->
+        <Subtitle
+            text="Related areas"/>
         <div class="related-areas">
-            <h2>Related areas</h2>
             <div class="carousel-outer">
                 <div class="carousel-inner">
                     <Carousel option="areaOption" class="carouselArea"
@@ -48,7 +51,6 @@
 
 <style>
     .related-areas {
-        background-color: #5BC0BE;
         color: #1C2541;
         margin-bottom: 20px;
         padding-bottom: 20px;

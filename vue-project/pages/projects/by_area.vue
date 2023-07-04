@@ -1,13 +1,9 @@
 <template>
     <main>
         <CustomHeader/>
-        <projectsInArea class="tmpFix"
+        <projectsInArea class="comp"
             v-for = "area in areas"
-            :title = "area.name"
-            :projData = "area.Projects"
-            :img = "area.data.imgURL"
-            :link = "'/areas/' + area.id"
-            :desc_short = "area.data.description"/>
+            :area = "area"/>
         <CustomFooter/>
     </main>
 </template>
@@ -23,9 +19,15 @@
 </script>
 
 <style scoped>
-    .tmpFix {
+    .comp {
         width: 100%;
-        background-color: #5BC0BE;
-        margin-top: 20px;
+        margin: 20px 0;
+    }
+</style>
+
+<!-- This is going down in history -->
+<style>
+    .carousel-item {
+        background-color: white;
     }
 </style>

@@ -4,19 +4,24 @@
         <h1>Projects</h1>
         <div id="top-section">
             <div id="top-title">
-                <NuxtLink to="/projects/relevantprojects" class="nav-item"><h2>Top projects</h2></NuxtLink>
-                <p>We present to you a meticulously curated
-                    assortment of our most significant, highly
-                    triumphant, and exceedingly ambitious undertakings
-                    that encapsulate the pinnacle of our achievements
-                    thus far.</p>
+                <Subtitle
+                    text="Top projects"/>
+                <div clas="top-cont">
+                    <p class="text">We present to you a meticulously curated
+                        assortment of our most significant, highly
+                        triumphant, and exceedingly ambitious undertakings
+                        that encapsulate the pinnacle of our achievements
+                        thus far.</p>
+                    <div class="seeseesee"><seeMore link="/projects/relevantprojects" class="nav-item"/></div>
+                </div>
             </div>
             <Carousel option="projectOption" class="carouselProject"
                 :slides="top_proj"/>
         </div>
+        <Subtitle
+            text="All projects"/>
         <div id="card-title">
-            <h2>All projects</h2>
-            <p>To provide you with a comprehensive overview,
+            <p class="text">To provide you with a comprehensive overview,
                 we are pleased to present an extensive compilation
                 containing an exhaustive and inclusive inventory
                 of every single project that oure VC I3E is presently
@@ -25,12 +30,19 @@
         </div>
         <div id="card-container-outer">
             <div id="card-container-inner">
-                <projectCard v-for = "project of projects"
-                             :text = "project.name"
-                             :image = "project.data.image"
-                             :link = "'/projects/' + project.id"/>
+                <Deck class="deck"
+                    :cards="projects"
+                    option="projects"/>
             </div>
         </div>
+        <Subtitle
+            text="Projects divided by area"/>
+        <p class="text">
+            If you are interested, instead, into browsing our projects based on their
+            area of interest, please go through this section
+        </p>
+        <div class="seeseesee last"><seeMore link="/projects/by_area" class="nav-item"/></div>
+        <div clas="space"></div>
     </main>
     <customFooter/>
 </template>
@@ -62,31 +74,28 @@
         text-align: center;
     }
 
-    .test {
-        display: flex;
-        flex-flow: row;
-    }
-
     #card-title {
         width: fit-content;
     }
 
-    #card-title > h2,
-    #top-title > h2 {
+    .headline {
         text-align: left;
         margin-left: 40px;
     }
 
-    #card-title > p,
-    #top-title > p {
+    .text {
         text-align: justify;
         margin-left: 80px;
         max-width: 600px;
     }
 
     #top-section {
-        background: #5BC0BE;
         padding: 20px 0;
+    }
+
+    .top-cont {
+        display: flex;
+        flex-direction: row;
     }
 
     #card-container-outer {
@@ -94,15 +103,12 @@
     }
 
     #card-container-inner {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-content: flex-start;
-        gap: 20px;
         background-color: #6FFFE9;
         padding: 20px 40px 20px 0;
-        border-radius: 20px 0 0 20px;
+    }
+
+    .deck {
+        width: 100%;
     }
 
     .carouselProject {
@@ -111,9 +117,19 @@
         height: 350px;
     }
 
-    .carousel-item {
-        background-color: white;
-        border:
+    .seeseesee {
+        margin-bottom: 20px;
     }
 
+    .last {
+        margin-bottom: 80px;
+    }
+
+</style>
+
+<!-- Here's a little lesson in trickery -->
+<style>
+    .carousel-item {
+        background-color: white;
+    }
 </style>

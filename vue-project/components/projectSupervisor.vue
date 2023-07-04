@@ -19,7 +19,6 @@
         </div>
         <div class="text-container">
             <div class="text-inner">
-                <h2>Supervisor</h2>
                 <h3 class="supervisor-name">
                     {{name}}
                 </h3>
@@ -53,7 +52,7 @@
         border-radius: 50%;
 
         width: 50%;
-        margin: 100px auto;
+        margin: 20px auto;
     }
 
     .text-inner {

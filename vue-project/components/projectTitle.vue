@@ -60,12 +60,12 @@
         margin-left: 30px;
         border: 2px solid white;
         border-right: 0;
+        box-shadow: -4px -4px 16px 0 rgba(0,0,0,0.3);
     }
 
     #title-section {
         display: flex;
         flex-flow: row-reverse;
-        padding-top: 10px;
     }
 
     #desc-short {
@@ -84,11 +84,10 @@
     }
 
     img {
-        border-radius: 20px 0 0 20px;
-        margin-bottom: 30px;
-        margin-right: 0;
+        margin: 20px;
         width: 350px;
         object-fit: cover;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
     }
 
     .bar {
