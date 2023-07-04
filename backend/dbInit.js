@@ -6,7 +6,8 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg'
+        image: 'Tafazzi.jpg', 
+        post: ''
       }
     },
     {
@@ -14,7 +15,8 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg'
+        image: 'Tafazzi.jpg', 
+        post: 'Founder & investment strategist'
       }
     },
     {
@@ -22,7 +24,8 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg'
+        image: 'Tafazzi.jpg', 
+        post: 'Founder & investment analyst'
       }
     },
     {
@@ -30,7 +33,8 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg'
+        image: 'Tafazzi.jpg', 
+        post: 'Founder & portfolio manager'
       }
     },
     {
@@ -38,7 +42,8 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg'
+        image: 'Tafazzi.jpg', 
+        post: 'Founder & investment analyst'
       }
     },
     {
@@ -46,7 +51,8 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg'
+        image: 'Tafazzi.jpg', 
+        post: ''
       }
     },
     {
@@ -54,7 +60,8 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg'
+        image: 'Tafazzi.jpg', 
+        post: ''
       }
     },
   ]

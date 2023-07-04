@@ -12,7 +12,9 @@ const { data: person } =
 <template>
     <customHeader/>
     <main>
-
+        <ShortBreadCrumbs parent="People" link="/people" :current="person.name" />
+        <PersonTitle :name="person.name" :post="person.data.post" :description="person.data.desc_short" :image="person.data.image"/>
+        
     </main>
     <customFooter/>
 </template>

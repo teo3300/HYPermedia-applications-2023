@@ -57,7 +57,7 @@
                             </div>
                             <div class="right">
                                 <h3>Emily JOHNSON</h3>
-                                <p>Founder & Investment analyst</p>
+                                <p>Founder & Portfolio Manager</p>
                             </div>
                         </div>
                         <img src="../images/members/emilyJohnson.jpg" alt="picture of Emily Johnson"
@@ -73,7 +73,7 @@
                             </div>
                             <div class="right">
                                 <h3>Alexander WONG</h3>
-                                <p>Founder & Investment analyst</p>
+                                <p>Founder & Investment strategist</p>
                             </div>
                         </div>
                         <img src="../images/members/AlexanderWONG.png" alt="picture of Alexander Wong"
