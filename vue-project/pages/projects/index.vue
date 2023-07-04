@@ -105,6 +105,7 @@
     #card-container-inner {
         background-color: #6FFFE9;
         padding: 20px 40px 20px 0;
+        border-radius: 20px 0 0 20px;
     }
 
     .deck {
