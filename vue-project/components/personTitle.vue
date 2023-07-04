@@ -44,7 +44,7 @@ export default {
 .title-description {
     background-color: #3A506B;
     color : white ; 
-    gap : 5%; 
+    gap : 15%; 
     display : flex ; 
     text-align: justify;
     margin-bottom : 20px ; 
@@ -63,7 +63,7 @@ export default {
 }
 
 #person-image {
-    width :100%; 
+    width :80%; 
     aspect-ratio: 1/1;
     object-fit: contain;
 }

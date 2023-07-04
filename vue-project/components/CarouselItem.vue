@@ -45,6 +45,11 @@ export default {
 <style scoped >
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Cambay:wght@400;700&family=Crushed&family=Lato:wght@300;400&display=swap');
 
+p {
+  overflow: auto;
+  max-height : 60%; 
+  padding-right : 10px ; 
+}
 .carousel-item {
   display: flex;
   position: absolute;

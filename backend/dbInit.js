@@ -7,7 +7,14 @@ export default async (models) => {
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
         image: 'Tafazzi.jpg', 
-        post: ''
+        post: '', 
+        experience: [
+          '1998 - has obtained that diploma - in that school',
+          '2000 - has done that job - in that company', 
+          '2007 - has done that job - in that company', 
+          '2015 - has done that job - in that company', 
+          '2022 - has joined our company'
+        ]
       }
     },
     {
@@ -16,7 +23,14 @@ export default async (models) => {
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
         image: 'Tafazzi.jpg', 
-        post: 'Founder & investment strategist'
+        post: 'Founder & investment strategist', 
+        experience: [
+          '1998 - has obtained that diploma - in that school',
+          '2000 - has done that job - in that company', 
+          '2007 - has done that job - in that company', 
+          '2015 - has done that job - in that company', 
+          '2022 - has joined our company'
+        ]
       }
     },
     {
@@ -25,7 +39,14 @@ export default async (models) => {
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
         image: 'Tafazzi.jpg', 
-        post: 'Founder & investment analyst'
+        post: 'Founder & investment analyst', 
+        experience: [
+          '1998 - has obtained that diploma - in that school',
+          '2000 - has done that job - in that company', 
+          '2007 - has done that job - in that company', 
+          '2015 - has done that job - in that company', 
+          '2022 - has joined our company'
+        ]
       }
     },
     {
@@ -34,7 +55,14 @@ export default async (models) => {
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
         image: 'Tafazzi.jpg', 
-        post: 'Founder & portfolio manager'
+        post: 'Founder & portfolio manager', 
+        experience: [
+          '1998 - has obtained that diploma - in that school',
+          '2000 - has done that job - in that company', 
+          '2007 - has done that job - in that company', 
+          '2015 - has done that job - in that company', 
+          '2022 - has joined our company'
+        ]
       }
     },
     {
@@ -43,7 +71,14 @@ export default async (models) => {
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
         image: 'Tafazzi.jpg', 
-        post: 'Founder & investment analyst'
+        post: 'Founder & investment analyst', 
+        experience: [
+          '1998 - has obtained that diploma - in that school',
+          '2000 - has done that job - in that company', 
+          '2007 - has done that job - in that company', 
+          '2015 - has done that job - in that company', 
+          '2022 - has joined our company'
+        ]
       }
     },
     {
@@ -52,7 +87,14 @@ export default async (models) => {
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
         image: 'Tafazzi.jpg', 
-        post: ''
+        post: '', 
+        experience: [
+          '1998 - has obtained that diploma - in that school',
+          '2000 - has done that job - in that company', 
+          '2007 - has done that job - in that company', 
+          '2015 - has done that job - in that company', 
+          '2022 - has joined our company'
+        ]
       }
     },
     {
@@ -61,7 +103,14 @@ export default async (models) => {
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
         image: 'Tafazzi.jpg', 
-        post: ''
+        post: '', 
+        experience: [
+          '1998 - has obtained that diploma - in that school',
+          '2000 - has done that job - in that company', 
+          '2007 - has done that job - in that company', 
+          '2015 - has done that job - in that company', 
+          '2022 - has joined our company'
+        ]
       }
     },
   ]
@@ -85,7 +134,7 @@ export default async (models) => {
         ], 
         url: "https://hazy.com/resources/2023/06/01/the-state-of-synthetic-data",
       },
-      PersonId: giacomino.id
+      PersonId: alexwong.id
     },
     {
       name: "AI factory",
@@ -98,7 +147,7 @@ export default async (models) => {
         ], 
         url: "https://preligens.com/products/ai-factory",
       },
-      PersonId: giacomino.id
+      PersonId: benjpat.id
     },
     {
       name: "Alibi detect",
