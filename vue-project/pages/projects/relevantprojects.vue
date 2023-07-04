@@ -9,18 +9,18 @@
 <div id="projec2">
    
     <p> This project offers a comprehensive solar energy solution tailored specifically for commercial and industrial real estate. As a dedicated solar energy provider, Wunder enables businesses to harness the power of renewable energy, reducing carbon footprint and energy costs.</p>
-    <img src="./Projects/solarenergyIE3.jpg">
+    <img src="./images/solarenergyIE3.jpg">
 </div>
 
 <div id="projec1">
-    <img src="./Projects/medicalIE3.jpg">
+    <img src="./images/medicalIE3.jpg">
     <p>This project aims to provide invaluable support for medical prescriptions and decisions. Through the integration of advanced technologies and data analysis, we offer an innovative solution that assists healthcare professionals in making informed choices and ensuring optimal patient care.</p>
 </div>
 
 <div id="projec2" >
     
     <p>This project empowers businesses to harness the power of AI in preventing theft across various types of stores. By leveraging advanced artificial intelligence technology, Veesion offers a comprehensive solution to detect and deter theft incidents. Join us on this transformative journey to enhance security measures, protect your assets, and create a safer shopping environment.</p>
-    <img src="./Projects/aiIE3.jpg">
+    <img src="./images/aiIE3.jpg">
 </div>
 <CustomFooter></CustomFooter>
 </template>
