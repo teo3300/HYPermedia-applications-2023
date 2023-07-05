@@ -145,7 +145,7 @@ async function initServer() {
   app.get('/areas', async(req, res) => {
     const data = await models.Areas.findAll({
       order: [
-        ['name', 'ASC'],
+        ['id', 'ASC'],
       ],
       include: [{
         model: models.Projects
@@ -158,7 +158,7 @@ async function initServer() {
       res.sendStatus(404)
     }
   })
-  // #: }}}
+  // #: }} v-if="area.id % 2 === 0"}
   // #: Top projects, sorted by relevance {{{
   app.get('/projects/top', async(req, res) => {
     const data = await models.Projects.findAll({

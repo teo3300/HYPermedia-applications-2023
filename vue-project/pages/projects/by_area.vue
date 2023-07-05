@@ -1,6 +1,10 @@
 <template>
     <main>
         <CustomHeader/>
+        <ShortBreadCrumbs
+            parent="Projects"
+            link="/projects"
+            current="By area"/>
         <projectsInArea class="comp"
             v-for = "area in areas"
             :area = "area"/>
