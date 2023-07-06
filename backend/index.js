@@ -140,9 +140,6 @@ async function initServer() {
       ],
       include: [{
         model: models.Projects,
-        order: [
-          ['name', 'ASC'],
-        ]
       }]
     });
 
