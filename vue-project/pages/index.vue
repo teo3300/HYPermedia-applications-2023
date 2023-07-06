@@ -3,34 +3,38 @@
     <CustomHeader></CustomHeader>
     <div class="description"></div>
     <div class="areas">
-      <div class="areastext">
+      <NuxtLink to="/areas/1"><div class="areastext">
         <h2>TECHNOLOGY AND SOFTWARE</h2>
-        <img src="../images/technologyAndSoftware.jpg" href="">
+        <img src="../images/technologyAndSoftware.jpg" href="http://localhost:3000/HYPermedia-applications-2023/areas/1">
        
-      </div>
-      <div id="healthcare" class="areastext">
+      </div></NuxtLink> 
+      <NuxtLink to="/areas/2"><div id="healthcare" class="healthcare">
         <h2>HEALTHCARE</h2>
-        <img src="../images/healthcareAndBiotechnology.jpg" href="">
+          <img src="../images/healthcareAndBiotechnology.jpg" href="">
         
-      </div>
-      <div id="energy" class="areastext">
+      </div></NuxtLink>
+      <NuxtLink to="/areas/3"><div id="energy" class="energy">
         <h2>Clean Energy & Sustainability</h2>
         <img src="../images/cleanEnergyAndSustainability.jpg" href="">
        
-      </div>
-      <div id="E-COMERCE" class="areastext">
+      </div></NuxtLink>
+      <NuxtLink to="/areas/4"><div id="E-COMERCE" class="ecommerce">
         <h2>E-commerce & consumer goods</h2>
-        <img src="../images/Ecommerce.jpg" href="">
+         <img src="../images/Ecommerce.jpg" href="">
+        
        
-      </div>
+      </div></NuxtLink>
     </div>
 
 
-    <div class="people"></div>
-    <img src="" href="">
-    <img src="" href="">
-    <img src="" href="">
-    <img src="" href="">
+    <div class="people">
+    <img src="../images/members/AlexanderWONG.png" href="">
+  
+    <img src="../images/members/emilyJohnson.jpg" href="">
+    <img src="../images/members/benjaminPatel.jpg" href="">
+    <img src="../images/members/oliviaMELBENT.jpg" href="">
+    <seeMore :link="areas"></seeMore>
+  </div>
     <div class="projects"></div>
     <CustomFooter></CustomFooter>
   </div>
@@ -59,9 +63,9 @@
   height:200px;
   padding: 20px;
 }
-.areas h2{
+.areastext h2{
   position:absolute;
-  top: 113px;
+  top: 100px;
   margin-left: 20px;
   text-align: center;
   display: flex;
@@ -69,17 +73,54 @@
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding-top: 100px;
-  padding-left: 100px;
-  padding-right: 80px;
-  font-size: 14px;
+  padding-left: 20px;
+  padding-right: 13px;
+  font-size: 30px;
+  z-index:1;
+}
+.healthcare h2{
+  position:absolute;
+  top: 100px;
+  margin-left: 20px;
+
+  text-align: center;
+  display: flex;
+  font-family: 'Crushed',sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-top: 100px;
+  padding-left: 90px;
+  padding-right: 93px;
+  font-size: 30px;
   z-index:1;
 }
 
 .people{
   background-color: #1C2541;
+  display: flex;
+  height:240px;
+  padding-top: 20px;
+  width:fit-content;
+  align-items: flex-end;
+  text-align: center;
+  
+
+
+}
+.people img{
+  display: inline-block;
+  margin-right: 10px;
+  height:200px;
+  padding: 20px;
+  border-radius: 60%;
+
 }
 
 .projects{
-  background-color: #0b132b;
+  background-color: #000000;
+  
+  height:240px;
+
+
 }
 </style>
