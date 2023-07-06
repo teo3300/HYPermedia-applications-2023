@@ -37,17 +37,17 @@ export default {
 <template>
     <main>
             <form @submit.prevent="submitForm" class="contactus">
-            <div class="errors" v-show="errors.length >0">
+<!--<div class="errors" v-show="errors.length >0">
                 <li v-for="(error ,index) in errors" :key="index">{{ error }}</li>
-            </div>
+            </div>-->
             <div>
                 <div>
                 <label for="name" id="name">Name(*)</label>
-                <input type="text" id="iname" v-model="name" >
+                <input type="text" id="iname" v-model="name" required >
             </div>
             <div>
                 <label for="email" id="email">Email Adress(*)</label>
-                <input type="email" id="iemail" v-model="email" >
+                <input type="email" id="iemail" v-model="email" required >
             </div>
             <div>
                 <label for="company" id="company">Company</label>
@@ -57,36 +57,36 @@ export default {
                 <label for="name" id="message">The Message</label>
                 <textarea id="message1"></textarea>
             </div>
-                <button type="submit">Submit</button>
+                <button type="submit">Send</button>
             </div>
         </form>
     </main>
 </template>
 
 <style scoped>
- form{
-        background-color: darkturquoise ;
-        justify-content: flex-end;
+ .contactus{
+        background-color: #5BC0BE ;
+      
         text-align: left;
         display: flex;
-        width: 500px;
-        height: 400px;
-        font-family:'Cambay', sans-serif;
         margin-left: auto;
-        margin-top: auto;
+        margin-right: 200px;
+        margin-bottom: 100px;
+        padding: 40px;
+        width: 400px;
+        height: fit-content;
+        font-family:'Cambay', sans-serif;
+        
+        
         
         
     }
-.contactus{
-    padding: 40px;
-    display: inline-block;
-    
-    
-}
+ 
+
 input{
     max-width: fit-content;
     display: block;
-    padding-left:250px;
+    width: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -97,13 +97,39 @@ textarea{
 button{
     font-family: 'Crushed', sans-serif;
     display:block;
+    text-align: center;
     background-color:#1c2541 ;
+    font-size: x-large;
     color: white;
     margin: 20px;
+    width:350px;
 }
 textarea{
     max-width: auto;
     width:400px;
-    height:50px;
+    height:100px;
 }
+
+
+
+@media only screen and (max-width: 768px){
+    .contactus{
+        background-color:  #5BC0BE  ;
+        margin-left: auto;
+        margin-bottom: 100px;
+        text-align: left;
+        display: flex;
+        margin-right: auto;
+        padding: 40px;
+        width: 400px;
+        height: fit-content;
+        font-family:'Cambay', sans-serif;
+        
+        
+        
+        
+    }
+ 
+}
+
 </style>
