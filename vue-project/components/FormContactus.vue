@@ -86,7 +86,7 @@ export default {
 input{
     max-width: fit-content;
     display: block;
-    padding-left:200px;
+    padding-left:250px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -100,5 +100,10 @@ button{
     background-color:#1c2541 ;
     color: white;
     margin: 20px;
+}
+textarea{
+    max-width: auto;
+    width:400px;
+    height:50px;
 }
 </style>
