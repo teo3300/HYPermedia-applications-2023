@@ -1,27 +1,27 @@
 <template>
 <CustomHeader></CustomHeader>
 <h1>Most relevant projects</h1>
-<div id="projec1">
-    <img src="./Projects/aiIE3.jpg">
+<NuxtLink to="/projects/2"><div id="projec1">
+    <img src="./images/aiIE3.png">
     <p>This is a game-changing project, featuring a multi-intelligence, AI-enabled operating system. This innovative platform addresses complex intelligence problems by seamlessly integrating cutting-edge technologies like machine learning, natural language processing, computer vision, and predictive analytics.</p>
-</div>
+</div></NuxtLink>
 
-<div id="projec2">
+<NuxtLink to="/projects/9"><div id="projec2">
    
     <p> This project offers a comprehensive solar energy solution tailored specifically for commercial and industrial real estate. As a dedicated solar energy provider, Wunder enables businesses to harness the power of renewable energy, reducing carbon footprint and energy costs.</p>
     <img src="./images/solarenergyIE3.jpg">
-</div>
+</div></NuxtLink>
 
-<div id="projec1">
+<NuxtLink to="/projects/6"><div id="projec1">
     <img src="./images/medicalIE3.jpg">
     <p>This project aims to provide invaluable support for medical prescriptions and decisions. Through the integration of advanced technologies and data analysis, we offer an innovative solution that assists healthcare professionals in making informed choices and ensuring optimal patient care.</p>
-</div>
+</div></NuxtLink>
 
-<div id="projec2" >
+<NuxtLink to="/projects/4"><div id="projec2" >
     
     <p>This project empowers businesses to harness the power of AI in preventing theft across various types of stores. By leveraging advanced artificial intelligence technology, Veesion offers a comprehensive solution to detect and deter theft incidents. Join us on this transformative journey to enhance security measures, protect your assets, and create a safer shopping environment.</p>
-    <img src="./images/aiIE3.jpg">
-</div>
+    <img src="./images/programmingIE3.jpg">
+</div></NuxtLink>
 <CustomFooter></CustomFooter>
 </template>
 
