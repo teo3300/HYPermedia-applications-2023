@@ -7,7 +7,14 @@
             <CustomHeader/>
             <div class="content">
                 <h1>Oops, something went wrong with your request</h1>
-                <NuxtLink to = "/">RETURN TO HOME PAGE</NuxtLink>
+                <NuxtLink class="link"
+                          to = "/">
+                    <div class="flex">
+                        <h2 class="tsu">¯¯\_(ツ)_/¯¯</h2>
+                        <i class="arrow left"></i>
+                    </div>
+                    <p class="text">Go back to the homepage</p>
+                </NuxtLink>
             </div>
             <CustomFooter class="footer"/>
         </main>
@@ -25,7 +32,33 @@
 
     .content {
         margin: 40px;
-        display: flex;
-        flex-direction: column;
     }
+
+    .link {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .tsu {
+        color: #aaa;
+        margin: 4px;
+    }
+
+    .text {
+        margin: auto;
+        margin: 4px;
+    }
+
+    .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+
+    .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+
 </style>
