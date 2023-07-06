@@ -20,6 +20,11 @@
               + '/areas'
     console.log('/projects/by_area' + id + '\tFetching: "' + URI + '"')
     const {data: areas } = await useFetch(URI)
+
+    useSeoMeta({
+        title: "Projects by area - I3E VC",
+        description: "All our projects, divided by area"
+    })
 </script>
 
 <style scoped>

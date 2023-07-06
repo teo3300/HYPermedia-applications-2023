@@ -385,90 +385,46 @@ export default async (models) => {
 
   const concernModel = [
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: tech_sw.id,
       ProjectId: hazy.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: tech_sw.id,
       ProjectId: preligens.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: tech_sw.id,
       ProjectId: seldom.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: tech_sw.id,
       ProjectId: veesion.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: heal_bio.id,
       ProjectId: inato.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: heal_bio.id,
       ProjectId: aqemia.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: heal_bio.id,
       ProjectId: posos.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: ene_sus.id,
       ProjectId: recycleye.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: ene_sus.id,
       ProjectId: wunder.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: com_goods.id,
       ProjectId: relex.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: ene_sus.id,
       ProjectId: relex.id
     }

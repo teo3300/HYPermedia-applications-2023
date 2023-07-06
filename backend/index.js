@@ -81,16 +81,7 @@ async function initDB() {
     }
   })
 
-  models.Concern = db.define('Concern', {
-    placeholder: {
-      type: DataTypes.JSON,
-      allowNull: false
-    },
-    data: {
-      type: DataTypes.JSON,
-      allowNull: false
-    }
-  })
+  models.Concern = db.define('Concern', {})
 // #: }}}
 // #: Entities relations {{{
   // People - Projects
@@ -148,7 +139,10 @@ async function initServer() {
         ['id', 'ASC'],
       ],
       include: [{
-        model: models.Projects
+        model: models.Projects,
+        order: [
+          ['name', 'ASC'],
+        ]
       }]
     });
 
@@ -158,7 +152,7 @@ async function initServer() {
       res.sendStatus(404)
     }
   })
-  // #: }} v-if="area.id % 2 === 0"}
+  // #: }}}
   // #: Top projects, sorted by relevance {{{
   app.get('/projects/top', async(req, res) => {
     const data = await models.Projects.findAll({

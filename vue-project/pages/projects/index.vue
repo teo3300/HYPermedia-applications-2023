@@ -57,6 +57,12 @@
         + '/projects/top'
     console.log('/projects\tFetching: "' + TOP + '"')
     const { data: top_proj } = await useFetch(TOP)
+
+    useSeoMeta({
+        title: "Projects - I3E VC",
+        description: "I3E Projects overview"
+    })
+
 </script>
 
 <style scoped>

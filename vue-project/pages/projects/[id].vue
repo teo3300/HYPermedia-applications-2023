@@ -39,14 +39,19 @@
               + '/projects/'
               + id
     console.log('/projects/' + id + '\tFetching: "' + URI + '"')
-    const {data: proj } = await useFetch(URI)
-                /*{
-                    id: 1,
-                    imgURL: '_nuxt/images/technologyAndSoftware.jpg',
-                    title: 'Technology & Software',
-                    descriptions: 'We invest in innovative software solutions, emerging technologies, and disruptive tech startups that have the potential to transform industries and reshape the digital landscape.',
-                    pageURL: 'areaTech'
-                },*/
+
+    const {data: proj } = await useFetch(URI, {
+        transform: (data) => {
+            const name = data.name
+            const descr = data.data.desc_short
+            useSeoMeta({
+                title: name + " - I3E VC",
+                description: descr
+            })
+            return data
+        }
+    })
+
 </script>
 
 <style>

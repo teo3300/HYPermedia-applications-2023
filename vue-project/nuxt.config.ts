@@ -12,7 +12,22 @@ export default defineNuxtConfig({
         }
     },
     app: {
-        baseURL: '/HYPermedia-applications-2023'
+      baseURL: '/HYPermedia-applications-2023',
+      head : {
+        title: 'I3E VC',
+        charset: 'utf-8',
+        meta: [
+          {
+            name: 'description',
+            content: 'I3E Venture Capital'
+          }
+        ],
+        link: [{
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/favicon.ico'
+        }]
+      }
     },
     link: [{
         rel: 'icon',
