@@ -18,9 +18,13 @@
     h1{
         font-family: 'Crushed', sans-serif;
         text-align: left;
-        margin-right: auto;
+        padding-top:100px;
+        padding-left:200px;
+        font-size: 70px;
+
         display: inline-block;
         max-width: 50%;
+        position: absolute;
        
        
     }
@@ -30,7 +34,13 @@
        
     }
    
-   
+    @media only screen and (max-width: 768px) {
+    
+            h1{
+                display:none;
+            }
+    
+    }
    
 
 </style>
