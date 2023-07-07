@@ -6,7 +6,7 @@
             <p> --- some not too long description about the team, look at what i've written in the 'about us' page before,
                 to not make it redondant ---</p>
         </div>
-        <img src="/HYPermedia-applications-2023/img/people/group.jpg" alt="Illustration photo" id="group-img" />
+        <img :src="`/HYPermedia-applications-2023/img/people/group.jpg`" alt="Illustration photo" id="group-img" />
         <div class="content-wrap">
             <div class="subtitle">
                 <h2>Members</h2>
@@ -17,7 +17,7 @@
                     :link="'/people/' + person.id" />
             </div>
         </div>
-        <img src="/HYPermedia-applications-2023/img/people/organigram.png" alt="Company's organigram" id="organigram" />
+        <img :src="`/HYPermedia-applications-2023/img/people/organigram.png`" alt="Company's organigram" id="organigram" />
     </main>
     <CustomFooter></CustomFooter>
 </template>
