@@ -46,14 +46,8 @@
     <NuxtLink to= "people/3"><img src="../images/members/benjaminPatel.jpg" ></NuxtLink>
    
     <NuxtLink to= "people/5"><img src="../images/members/oliviaMELBENT.jpg"></NuxtLink>
-    <NuxtLink to="people" class="flecha">&rarr;</NuxtLink>
+    <NuxtLink to="people" class="flecha">&rarr; <p id="meet-team">Meet our team</p></NuxtLink>
   </div>
-    <div class="projects">
-      <NuxtLink to="/projects/9"><img src="./projects/images/aiIE3.png"></NuxtLink>
-      <NuxtLink to="/projects/9"><img src="./projects/images/solarenergyIE3.jpg"></NuxtLink>
-      <NuxtLink to="/projects/6"><img src="./projects/images/medicalIE3.jpg"></NuxtLink>
-      <NuxtLink to="/projects/4"><img src="./projects/images/programmingIE3.jpg"></NuxtLink>
-    </div>
     <CustomFooter></CustomFooter>
   </div>
 </template>
@@ -64,19 +58,34 @@ export default {
 }; 
 </script>
 
+<script setup >
+const TOP = useRuntimeConfig().public.serverURL
+        + '/projects/top'
+    console.log('/projects\tFetching: "' + TOP + '"')
+    const { data: top_proj } = await useFetch(TOP)
+</script>
+
 <style >
 @import url('https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&family=Crushed&family=Lato:wght@300;400&display=swap');
 
 .flecha{
-  height: 200px;
-  width: 210px;
-  color:aqua;
+  color:#5BC0BE;
   font-family: 'Crushed',sans-serif;
   font-size: 100px;
   text-decoration: none;
-  
+  margin-left : 3% ; 
 }
-
+#meet-team {
+  font-size : 20px ; 
+  margin : 0px ; 
+  text-decoration : underline ;
+  text-decoration-color: transparent;
+  transition : text-decoration-color 0.5s ; 
+}
+#meet-team:hover {
+  text-decoration-color: #5BC0BE ;
+  transition : text-decoration-color 0.5s ; 
+}
 
 .description {
   width: 80%;
@@ -115,7 +124,7 @@ export default {
 
 .areastext h2, .healthcare h2, .energy h2, .ecommerce h2 {
   position: absolute;
-  margin-left: 20px;
+  margin: 20px;
   text-align: center;
   font-family: 'Crushed', sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
@@ -139,14 +148,13 @@ export default {
 }
 
 .energy h2 {
-  padding-top: 30px;
+  padding-top: 45px;
   padding-left: 71px;
   padding-right: 71px;
 }
 
 .ecommerce h2 {
-  font-display: inline;
-  padding-top: 20px;
+  padding-top: 45px;
   padding-left: 60px;
   padding-right: 55px;
 }
@@ -156,19 +164,22 @@ export default {
   background-color: #1C2541;
   display: flex;
   height: 240px;
-  padding-top: 20px;
   width: 100%;
-  align-items: flex-end;
   text-align: center;
+  align-items: center;
 }
 
 .people img {
   display: inline-block;
-  margin: auto;
+  margin: 20px;
   height: 200px;
-  padding: 20px;
   border-radius: 60%;
-
+  border : 2px solid transparent ; 
+  transition : border 0.5s ;
+}
+.people img:hover {
+  border : 2px solid #5BC0BE ; 
+  transition : border 0.5s ;
 }
 #link-to-people {
   color : white ; 
