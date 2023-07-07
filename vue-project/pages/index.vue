@@ -1,7 +1,10 @@
 <template>
   <div>
     <CustomHeader></CustomHeader>
-    <div class="description"></div>
+    <div class="description">
+      <Carousel option="projectOption" class="carouselProject"
+                :slides="top_proj"/>
+    </div>
     <div class="areas">
       <NuxtLink to="/areas/1"><div class="areastext">
         <h2>TECHNOLOGY AND SOFTWARE</h2>
@@ -19,7 +22,7 @@
        
       </div></NuxtLink>
       <NuxtLink to="/areas/4"><div id="E-COMERCE" class="ecommerce">
-        <h2>E-commerce & consumer goods</h2>
+        <h2>E-commerce  & consumer goods</h2>
          <img src="../images/Ecommerce.jpg" href="">
         
        
@@ -46,12 +49,18 @@
 <style >
 @import url('https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&family=Crushed&family=Lato:wght@300;400&display=swap');
 
+
+
+.description{
+  height:500px
+}
 .areas{
+ 
   background-color: #3A506B;
   display: flex;
   height:240px;
   padding-top: 20px;
-  width:fit-content;
+  width:max-content;
   align-items: flex-end;
   text-align: center;
   
@@ -65,7 +74,7 @@
 }
 .areastext h2{
   position:absolute;
-  top: 100px;
+  top: 600px;
   margin-left: 20px;
   text-align: center;
   display: flex;
@@ -80,9 +89,8 @@
 }
 .healthcare h2{
   position:absolute;
-  top: 100px;
+  top: 600px;
   margin-left: 20px;
-
   text-align: center;
   display: flex;
   font-family: 'Crushed',sans-serif;
@@ -94,6 +102,38 @@
   font-size: 30px;
   z-index:1;
 }
+
+.energy h2{
+  position:absolute;
+  top: 600px;
+  margin-left: 20px;
+  text-align: center;
+  display: flex;
+  font-family: 'Crushed',sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-top: 30px;
+  padding-left: 80px;
+  padding-right: 71px;
+  font-size: 30px;
+  z-index:1;
+}
+
+.ecommerce h2{
+  position:absolute;
+  top: 608px;
+  margin-left: 20px;
+  font-display: inline;
+  font-family: 'Crushed',sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-top: 20px;
+  padding-left: 120px;
+  padding-right: 104px;
+  font-size: 20px;
+  z-index:1;
+}
+
 
 .people{
   background-color: #1C2541;
