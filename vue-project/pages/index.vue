@@ -39,24 +39,43 @@
 
 
     <div class="people">
-      <img src="../images/members/AlexanderWONG.png" href="">
-      <img src="../images/members/emilyJohnson.jpg" href="">
-      <img src="../images/members/benjaminPatel.jpg" href="">
-      <img src="../images/members/oliviaMELBENT.jpg" href="">
-      <NuxtLink to="/people" id="link-to-people">> Meet our team</NuxtLink>
-      <!--<seeMore :link="people" class="seemore"></seeMore>-->
+    <NuxtLink to= "people/2"><img src="../images/members/AlexanderWONG.png" ></NuxtLink>
+  
+    <NuxtLink to= "people/4"><img src="../images/members/emilyJohnson.jpg" ></NuxtLink>
+   
+    <NuxtLink to= "people/3"><img src="../images/members/benjaminPatel.jpg" ></NuxtLink>
+   
+    <NuxtLink to= "people/5"><img src="../images/members/oliviaMELBENT.jpg"></NuxtLink>
+    <NuxtLink to="people" class="flecha">&rarr;</NuxtLink>
+  </div>
+    <div class="projects">
+      <NuxtLink to="/projects/9"><img src="./projects/images/aiIE3.png"></NuxtLink>
+      <NuxtLink to="/projects/9"><img src="./projects/images/solarenergyIE3.jpg"></NuxtLink>
+      <NuxtLink to="/projects/6"><img src="./projects/images/medicalIE3.jpg"></NuxtLink>
+      <NuxtLink to="/projects/4"><img src="./projects/images/programmingIE3.jpg"></NuxtLink>
     </div>
-    <div class="projects"></div>
     <CustomFooter></CustomFooter>
   </div>
 </template>
 
 <script>
+export default {
+  props: ['/people']
+}; 
 </script>
 
 <style >
 @import url('https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&family=Crushed&family=Lato:wght@300;400&display=swap');
 
+.flecha{
+  height: 200px;
+  width: 210px;
+  color:aqua;
+  font-family: 'Crushed',sans-serif;
+  font-size: 100px;
+  text-decoration: none;
+  
+}
 
 
 .description {
@@ -162,8 +181,48 @@
 
 .projects {
   background-color: #000000;
+  
+  display: flex;
+  height:240px;
+  padding-top: 20px;
+  width:max-content;
+  align-items: flex-end;
+  text-align: center;
+  
 
-  height: 240px;
+
+}
+
+.projects img{
+  display: inline-block;
+  margin-right: 10px;
+  position:relative;
+  height:200px;
+  width:300px;
+  padding: 20px;
+  clip-path:fill-box;
 
 
-}</style>
+}
+
+
+@media only screen and (max-width: 768px){
+
+  .energy h2{
+  position:absolute;
+  top: 600px;
+  margin-left: 20px;
+  text-align: center;
+  display: flex;
+  font-family: 'Crushed',sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-top: 30px;
+  padding-left: 80px;
+  padding-right: 71px;
+  font-size: 30px;
+  z-index:1;
+}
+}
+
+</style>
