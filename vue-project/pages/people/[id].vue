@@ -14,8 +14,7 @@ const { data: person } =
     <customHeader />
     <main>
         <ShortBreadCrumbs parent="People" link="/people" :current="person.name" />
-        <PersonTitle :name="person.name" :post="person.data.post" :description="person.data.desc_short"
-            :image="person.data.image" />
+        <PersonTitle :name="person.name" :post="person.data.post" :description="person.data.desc_short" :image="person.data.image" />
         <div class="wrap">
             <div class="right">
                 <div class="subtitle">
