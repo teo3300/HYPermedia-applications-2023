@@ -2,42 +2,50 @@
   <div>
     <CustomHeader></CustomHeader>
     <div class="description">
-      <Carousel option="projectOption" class="carouselProject"
-                :slides="top_proj"/>
+      <Carousel option="projectOption" class="carouselProject" :slides="top_proj" />
     </div>
     <div class="areas">
-      <NuxtLink to="/areas/1"><div class="areastext">
-        <h2>TECHNOLOGY AND SOFTWARE</h2>
-        <img src="../images/technologyAndSoftware.jpg" href="http://localhost:3000/HYPermedia-applications-2023/areas/1">
-       
-      </div></NuxtLink> 
-      <NuxtLink to="/areas/2"><div id="healthcare" class="healthcare">
-        <h2>HEALTHCARE</h2>
+      <NuxtLink to="/areas/1">
+        <div class="areastext">
+          <h2>TECHNOLOGY AND SOFTWARE</h2>
+          <img src="../images/technologyAndSoftware.jpg"
+            href="http://localhost:3000/HYPermedia-applications-2023/areas/1">
+
+        </div>
+      </NuxtLink>
+      <NuxtLink to="/areas/2">
+        <div id="healthcare" class="healthcare">
+          <h2>HEALTHCARE</h2>
           <img src="../images/healthcareAndBiotechnology.jpg" href="">
-        
-      </div></NuxtLink>
-      <NuxtLink to="/areas/3"><div id="energy" class="energy">
-        <h2>Clean Energy & Sustainability</h2>
-        <img src="../images/cleanEnergyAndSustainability.jpg" href="">
-       
-      </div></NuxtLink>
-      <NuxtLink to="/areas/4"><div id="E-COMERCE" class="ecommerce">
-        <h2>E-commerce  & consumer goods</h2>
-         <img src="../images/Ecommerce.jpg" href="">
-        
-       
-      </div></NuxtLink>
+
+        </div>
+      </NuxtLink>
+      <NuxtLink to="/areas/3">
+        <div id="energy" class="energy">
+          <h2>Clean Energy <br> & <br> Sustainability</h2>
+          <img src="../images/cleanEnergyAndSustainability.jpg" href="">
+
+        </div>
+      </NuxtLink>
+      <NuxtLink to="/areas/4">
+        <div id="E-COMERCE" class="ecommerce">
+          <h2>E-commerce <br> & <br> consumer goods</h2>
+          <img src="../images/Ecommerce.jpg" href="">
+
+
+        </div>
+      </NuxtLink>
     </div>
 
 
     <div class="people">
-    <img src="../images/members/AlexanderWONG.png" href="">
-  
-    <img src="../images/members/emilyJohnson.jpg" href="">
-    <img src="../images/members/benjaminPatel.jpg" href="">
-    <img src="../images/members/oliviaMELBENT.jpg" href="">
-    <seeMore :link="areas"></seeMore>
-  </div>
+      <img src="../images/members/AlexanderWONG.png" href="">
+      <img src="../images/members/emilyJohnson.jpg" href="">
+      <img src="../images/members/benjaminPatel.jpg" href="">
+      <img src="../images/members/oliviaMELBENT.jpg" href="">
+      <NuxtLink to="/people" id="link-to-people">> Meet our team</NuxtLink>
+      <!--<seeMore :link="people" class="seemore"></seeMore>-->
+    </div>
     <div class="projects"></div>
     <CustomFooter></CustomFooter>
   </div>
@@ -51,116 +59,111 @@
 
 
 
-.description{
-  height:500px
+.description {
+  width: 80%;
+  padding: 0px 10%;
 }
-.areas{
- 
+
+.carouselProject {
+  height: 20em;
+  width: 100%;
+  align-items: center;
+  margin: 40px 0px ; 
+}
+
+.areas {
   background-color: #3A506B;
   display: flex;
-  height:240px;
+  height: 240px;
   padding-top: 20px;
-  width:max-content;
+  width: 100%;
   align-items: flex-end;
   text-align: center;
-  
 }
-.areas img{
+
+.areastext, .healthcare, .energy,  .ecommerce {
+  margin : auto ; 
+}
+
+.areas img {
   display: inline-block;
   margin-right: 10px;
-  position:relative;
-  height:200px;
+  position: relative;
+  height: 200px;
+  width : 85% ;
   padding: 20px;
 }
-.areastext h2{
-  position:absolute;
-  top: 600px;
+
+.areastext h2, .healthcare h2, .energy h2, .ecommerce h2 {
+  position: absolute;
   margin-left: 20px;
   text-align: center;
-  display: flex;
-  font-family: 'Crushed',sans-serif;
+  font-family: 'Crushed', sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  z-index: 1;
+  display: flex;
+  font-size: 25px;
+}
+
+.areastext h2 {
   padding-top: 100px;
-  padding-left: 20px;
+  padding-left: 30px;
   padding-right: 13px;
-  font-size: 30px;
-  z-index:1;
+  
 }
-.healthcare h2{
-  position:absolute;
-  top: 600px;
-  margin-left: 20px;
-  text-align: center;
-  display: flex;
-  font-family: 'Crushed',sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+
+.healthcare h2 {
   padding-top: 100px;
-  padding-left: 90px;
+  padding-left: 75px;
   padding-right: 93px;
-  font-size: 30px;
-  z-index:1;
 }
 
-.energy h2{
-  position:absolute;
-  top: 600px;
-  margin-left: 20px;
-  text-align: center;
-  display: flex;
-  font-family: 'Crushed',sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+.energy h2 {
   padding-top: 30px;
-  padding-left: 80px;
+  padding-left: 71px;
   padding-right: 71px;
-  font-size: 30px;
-  z-index:1;
 }
 
-.ecommerce h2{
-  position:absolute;
-  top: 608px;
-  margin-left: 20px;
+.ecommerce h2 {
   font-display: inline;
-  font-family: 'Crushed',sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
   padding-top: 20px;
-  padding-left: 120px;
-  padding-right: 104px;
-  font-size: 20px;
-  z-index:1;
+  padding-left: 60px;
+  padding-right: 55px;
 }
 
 
-.people{
+.people {
   background-color: #1C2541;
   display: flex;
-  height:240px;
+  height: 240px;
   padding-top: 20px;
-  width:fit-content;
+  width: 100%;
   align-items: flex-end;
   text-align: center;
-  
-
-
 }
-.people img{
+
+.people img {
   display: inline-block;
-  margin-right: 10px;
-  height:200px;
+  margin: auto;
+  height: 200px;
   padding: 20px;
   border-radius: 60%;
 
 }
-
-.projects{
-  background-color: #000000;
-  
-  height:240px;
-
-
+#link-to-people {
+  color : white ; 
+  font-family: 'Crushed', serif;
+  margin : auto; 
 }
-</style>
+#link-to-people:hover {
+  color : #6FFFE9 ; 
+}
+
+.projects {
+  background-color: #000000;
+
+  height: 240px;
+
+
+}</style>
