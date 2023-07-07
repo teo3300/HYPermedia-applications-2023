@@ -1,17 +1,5 @@
-<script setup>
-const route = useRoute()
-const id = route.params.id
-const URI = useRuntimeConfig().public.serverURL
-    + '/people/'
-    + id
-console.log('/people/' + id + '\tFetching: "' + URI + '"')
-const { data: person } =
-    await useFetch(URI)
-
-</script>
-
 <template>
-    <customHeader />
+    <customHeader></customHeader>
     <main>
         <ShortBreadCrumbs parent="People" link="/people" :current="person.name" />
         <PersonTitle :name="person.name" :post="person.data.post" :description="person.data.desc_short" :image="person.data.image" />
@@ -30,13 +18,24 @@ const { data: person } =
                     <h2 id="h2-decal">Example of projects </h2>
                     <div class="bar"></div>
                 </div>
-                <Carousel :slides="person.Projects" option="projectOption" class="carouselProject" />
-                <!--<ProjectCard :text="person.Project.name" :image="project.data.image" :link="'/projects/' + project.id" />-->
             </div>
+            <Carousel :slides="person.Projects" option="projectOption" class="carouselProject"></Carousel>
+                <!--<ProjectCard :text="person.Project.name" :image="project.data.image" :link="'/projects/' + project.id" />-->
         </div>
+    <customFooter></customFooter>   
     </main>
-    <customFooter />
 </template>
+
+<script setup>
+const route = useRoute()
+const id = route.params.id
+const URI = useRuntimeConfig().public.serverURL
+    + '/people/'
+    + id
+console.log('/people/' + id + '\tFetching: "' + URI + '"')
+const { data: person } =
+    await useFetch(URI)
+</script>
 
 <style scoped>
 main {
