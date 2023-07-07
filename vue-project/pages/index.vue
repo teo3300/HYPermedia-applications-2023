@@ -31,23 +31,34 @@
 
 
     <div class="people">
-    <img src="../images/members/AlexanderWONG.png" href="">
+    <NuxtLink to= "people/"><img src="../images/members/AlexanderWONG.png" ></NuxtLink>
   
-    <img src="../images/members/emilyJohnson.jpg" href="">
-    <img src="../images/members/benjaminPatel.jpg" href="">
-    <img src="../images/members/oliviaMELBENT.jpg" href="">
-    <seeMore :link="areas"></seeMore>
+    <img src="../images/members/emilyJohnson.jpg" >
+   
+    <img src="../images/members/benjaminPatel.jpg" >
+   
+    <img src="../images/members/oliviaMELBENT.jpg">
+    <NuxtLink class="button" :to="link"> See more ... </NuxtLink>
   </div>
-    <div class="projects"></div>
+    <div class="projects">
+      <NuxtLink to="/projects/9"><img src="./projects/images/aiIE3.png"></NuxtLink>
+      <NuxtLink to="/projects/9"><img src="./projects/images/solarenergyIE3.jpg"></NuxtLink>
+      <NuxtLink to="/projects/6"><img src="./projects/images/medicalIE3.jpg"></NuxtLink>
+      <NuxtLink to="/projects/4"><img src="./projects/images/programmingIE3.jpg"></NuxtLink>
+    </div>
     <CustomFooter></CustomFooter>
   </div>
 </template>
 
 <script>
+export default {
+  props: ['/people']
+}; 
 </script>
 
 <style >
 @import url('https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&family=Crushed&family=Lato:wght@300;400&display=swap');
+
 
 
 
@@ -105,17 +116,17 @@
 
 .energy h2{
   position:absolute;
-  top: 600px;
+  top: 608px;
   margin-left: 20px;
   text-align: center;
   display: flex;
   font-family: 'Crushed',sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  padding-top: 30px;
-  padding-left: 80px;
-  padding-right: 71px;
-  font-size: 30px;
+  padding-top: 110px;
+  padding-left: 50px;
+  padding-right: 40px;
+  font-size: 20px;
   z-index:1;
 }
 
@@ -150,8 +161,9 @@
 .people img{
   display: inline-block;
   margin-right: 10px;
-  height:200px;
-  padding: 20px;
+  margin-top: 00px;
+  height:210px;
+  padding: 40px;
   border-radius: 60%;
 
 }
@@ -159,8 +171,47 @@
 .projects{
   background-color: #000000;
   
+  display: flex;
   height:240px;
+  padding-top: 20px;
+  width:max-content;
+  align-items: flex-end;
+  text-align: center;
+  
 
 
 }
+
+.projects img{
+  display: inline-block;
+  margin-right: 10px;
+  position:relative;
+  height:200px;
+  width:300px;
+  padding: 20px;
+  clip-path:fill-box;
+
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+  .energy h2{
+  position:absolute;
+  top: 600px;
+  margin-left: 20px;
+  text-align: center;
+  display: flex;
+  font-family: 'Crushed',sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-top: 30px;
+  padding-left: 80px;
+  padding-right: 71px;
+  font-size: 30px;
+  z-index:1;
+}
+}
+
 </style>
