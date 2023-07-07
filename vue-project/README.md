@@ -40,3 +40,5 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+[Course documentation](https://gitlab.com/i3lab/hypermedia/hypermedia-22-23/t08-template-ghpages/-/blob/master/Frontend/readme.md) on deployment
