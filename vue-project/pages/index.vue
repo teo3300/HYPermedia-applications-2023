@@ -31,14 +31,14 @@
 
 
     <div class="people">
-    <NuxtLink to= "people/"><img src="../images/members/AlexanderWONG.png" ></NuxtLink>
+    <NuxtLink to= "people/2"><img src="../images/members/AlexanderWONG.png" ></NuxtLink>
   
-    <img src="../images/members/emilyJohnson.jpg" >
+    <NuxtLink to= "people/4"><img src="../images/members/emilyJohnson.jpg" ></NuxtLink>
    
-    <img src="../images/members/benjaminPatel.jpg" >
+    <NuxtLink to= "people/3"><img src="../images/members/benjaminPatel.jpg" ></NuxtLink>
    
-    <img src="../images/members/oliviaMELBENT.jpg">
-    <NuxtLink class="button" :to="link"> See more ... </NuxtLink>
+    <NuxtLink to= "people/5"><img src="../images/members/oliviaMELBENT.jpg"></NuxtLink>
+    <NuxtLink to="people" class="flecha">&rarr;</NuxtLink>
   </div>
     <div class="projects">
       <NuxtLink to="/projects/9"><img src="./projects/images/aiIE3.png"></NuxtLink>
@@ -59,7 +59,15 @@ export default {
 <style >
 @import url('https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&family=Crushed&family=Lato:wght@300;400&display=swap');
 
-
+.flecha{
+  height: 200px;
+  width: 210px;
+  color:aqua;
+  font-family: 'Crushed',sans-serif;
+  font-size: 100px;
+  text-decoration: none;
+  
+}
 
 
 .description{
