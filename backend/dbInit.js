@@ -37,9 +37,9 @@ export default async (models) => {
       name: "Benjamin PATEL",
       relevance: 1,
       data: {
-        desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
+        desc_short: "Dr. Tafazzi Poretti is a Project Manager and is in charge of planning, organizing and managing projects. He also have to coordinate tasks, assign ressources and ensure deadlines and objectives are met.",
         image: 'benjaminPatel.jpg', 
-        post: 'Founder & investment analyst', 
+        post: 'Project Manager', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
@@ -53,9 +53,9 @@ export default async (models) => {
       name: "Emily JOHNSON",
       relevance: 1,
       data: {
-        desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
+        desc_short: "Ms. Emily Johnson holds the post of Sales Manager. The sales manager is responsible for driving the company's sales activities. She developes sales strategies, identifies new opportunities, oversees negotiations, and manages client relationships.",
         image: 'emilyJohnson.jpg', 
-        post: 'Founder & portfolio manager', 
+        post: 'Sales Manager', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
