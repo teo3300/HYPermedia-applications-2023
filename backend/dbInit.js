@@ -21,9 +21,9 @@ export default async (models) => {
       name: "Alexander WONG",
       relevance: 1,
       data: {
-        desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
+        desc_short: "Dr. Alexander Wong as a manager is responsible for overseeing the overall team operations. They set goals, coordinate activities, and communicate with higher management.",
         image: 'AlexanderWONG.png', 
-        post: 'Founder & investment strategist', 
+        post: 'Manager', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
@@ -136,6 +136,54 @@ export default async (models) => {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
         image: 'Tafazzi.jpg', 
         post: '', 
+        experience: [
+          '1998 - has obtained that diploma - in that school',
+          '2000 - has done that job - in that company', 
+          '2007 - has done that job - in that company', 
+          '2015 - has done that job - in that company', 
+          '2022 - has joined our company'
+        ]
+      }
+    },
+    {
+      name: "Ethan Sullivan",
+      relevance: 1,
+      data: {
+        desc_short: "Dr. Alexander Wong as a manager is responsible for overseeing the overall team operations. They set goals, coordinate activities, and communicate with higher management.",
+        image: 'EthanSullivan.jpg', 
+        post: 'Manager', 
+        experience: [
+          '1998 - has obtained that diploma - in that school',
+          '2000 - has done that job - in that company', 
+          '2007 - has done that job - in that company', 
+          '2015 - has done that job - in that company', 
+          '2022 - has joined our company'
+        ]
+      }
+    },
+   {
+      name: "Maria Isabel CONDE",
+      relevance: 1,
+      data: {
+        desc_short: "Dr. Alexander Wong as a manager is responsible for overseeing the overall team operations. They set goals, coordinate activities, and communicate with higher management.",
+        image: 'MariaIsabelConde.jpg', 
+        post: 'Manager', 
+        experience: [
+          '1998 - has obtained that diploma - in that school',
+          '2000 - has done that job - in that company', 
+          '2007 - has done that job - in that company', 
+          '2015 - has done that job - in that company', 
+          '2022 - has joined our company'
+        ]
+      }
+    },
+     {
+      name: "Lucas THOMPSON",
+      relevance: 1,
+      data: {
+        desc_short: "Dr. Alexander Wong as a manager is responsible for overseeing the overall team operations. They set goals, coordinate activities, and communicate with higher management.",
+        image: 'LucasThompson.jpg', 
+        post: 'Manager', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
