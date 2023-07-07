@@ -2,7 +2,7 @@
     <CustomHeader></CustomHeader>
     <main>
         <h1>People</h1>
-        <div class="description">
+        <div class="text">
             <p> At IE3, team spirit is the driving force behind our success. Every day, our employees combine their strengths, skills and passion to achieve common goals. Together, we form a true professional family, where collaboration and solidarity are at the heart of our corporate culture.
 And this working family is at your service to support you in your various projects.</p>
         </div>
@@ -49,12 +49,10 @@ h2 {
     font-family: 'Cambay', sans-serif;
 }
 
-.description {
-    width: 100%;
+.text {
     text-align: justify;
-    background-color: #5BC0BE;
-    padding: 1% 5%;
-    margin: 20px 0px;
+    margin-left: 80px;
+    max-width: 600px;;
 }
 
 #group-img {
