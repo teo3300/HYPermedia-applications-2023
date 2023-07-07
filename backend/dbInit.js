@@ -22,7 +22,7 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'AlexanderWONG.png',
+        image: 'AlexanderWONG.png', 
         post: 'Founder & investment strategist', 
         experience: [
           '1998 - has obtained that diploma - in that school',
@@ -38,7 +38,7 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'benjaminPatel.jpg',
+        image: 'benjaminPatel.jpg', 
         post: 'Founder & investment analyst', 
         experience: [
           '1998 - has obtained that diploma - in that school',
@@ -54,7 +54,7 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'emilyJohnson.jpg',
+        image: 'emilyJohnson.jpg', 
         post: 'Founder & portfolio manager', 
         experience: [
           '1998 - has obtained that diploma - in that school',
@@ -70,7 +70,7 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'oliviaMELBENT.jpg',
+        image: 'oliviaMELBENT.jpg', 
         post: 'Founder & investment analyst', 
         experience: [
           '1998 - has obtained that diploma - in that school',
@@ -80,39 +80,9 @@ export default async (models) => {
           '2022 - has joined our company'
         ]
       }
-    },{
-      name: "David BROWN",
-      relevance: 4,
-      data: {
-        desc_short: "David Brown is a seasoned venture capitalist and serial entrepreneur. With a deep understanding of technology trends and market dynamics, he has a proven track record of identifying high-growth investment opportunities. David's experience spans multiple industries, including software, healthcare, and consumer goods. He has successfully led numerous funding rounds and provided strategic guidance to startups at various stages of growth. David's passion for innovation and his ability to navigate complex business landscapes make him a valuable asset to the ventures he supports.",
-        image: "DavidBrown.jpg",
-        post: "Partner",
-        experience: [
-          "1998 - Founded a software startup that achieved a successful exit",
-          "2001 - Joined Venture Capital Firm Z as a Senior Analyst",
-          "2006 - Co-founded a healthcare technology company",
-          "2012 - Led a high-profile IPO for the consumer goods startup",
-          "2016 - Became a Partner at our Venture Capital Firm"
-        ]
-      }
-    },{
-      name: "Sarah SMITH",
-      relevance: 2,
-      data: {
-        desc_short: "Sarah Smith is a dynamic venture capitalist with a diverse background in finance and entrepreneurship. She has a keen interest in sustainable technologies and social impact investments. Sarah's extensive experience in both startup operations and venture capital allows her to provide valuable guidance to early-stage companies. With a strong network of industry contacts, Sarah is known for her ability to connect startups with strategic partners and resources. She is committed to driving positive change and fostering innovation in the startup ecosystem.",
-        image: "SarahSMITH.jpg",
-        post: "Managing Partner",
-        experience: [
-          "2005 - Graduated with honors in Business Administration - University of ABC",
-          "2006 - Founded a successful e-commerce startup",
-          "2010 - Joined Venture Capital Firm X as an Associate",
-          "2014 - Co-led a Series B funding round for CleanTech Startup Y",
-          "2018 - Started her own angel investing initiative for female founders",
-          "2021 - Became Managing Partner at our Venture Capital Firm"
-        ]
-      }
-    },{
-      name: "Tafazzi Poretti",
+    },
+    {
+      name: "Kali Broneman",
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
@@ -128,7 +98,7 @@ export default async (models) => {
       }
     },
     {
-      name: "Tafazzi Poretti",
+      name: "Marco Aventuzzi",
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
@@ -144,23 +114,37 @@ export default async (models) => {
       }
     },
     {
-      name: "John DOE",
-      relevance: 3,
+      name: "Daniel Ramirez Castro",
+      relevance: 1,
       data: {
-        desc_short: "John Doe is a seasoned investor with a strong track record in the technology sector. He specializes in early-stage investments and has a keen eye for identifying promising startups with disruptive potential. With over a decade of experience in venture capital, John has helped numerous companies scale and achieve remarkable success. His strategic insights and network of industry connections make him a valuable asset to any entrepreneurial team. John is passionate about supporting innovative ideas and driving meaningful change in the startup ecosystem.",
-        image: "John_DOE.jpg",
-        post: "Senior Partner",
+        desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
+        image: 'Tafazzi.jpg', 
+        post: '', 
         experience: [
-          "2007 - Obtained a degree in Finance - University of XYZ",
-          "2008 - Joined Venture Capital Firm A as an Analyst",
-          "2011 - Promoted to Associate at Venture Capital Firm A",
-          "2014 - Co-founded VC Fund B, focusing on early-stage tech startups",
-          "2018 - Led successful Series A funding round for Startup X",
-          "2020 - Served as a board member for Startup Y",
-          "2022 - Joined our Venture Capital as Senior Partner"
+          '1998 - has obtained that diploma - in that school',
+          '2000 - has done that job - in that company', 
+          '2007 - has done that job - in that company', 
+          '2015 - has done that job - in that company', 
+          '2022 - has joined our company'
         ]
       }
-    }
+    },
+    {
+      name: "Spencer Right",
+      relevance: 1,
+      data: {
+        desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
+        image: 'Tafazzi.jpg', 
+        post: '', 
+        experience: [
+          '1998 - has obtained that diploma - in that school',
+          '2000 - has done that job - in that company', 
+          '2007 - has done that job - in that company', 
+          '2015 - has done that job - in that company', 
+          '2022 - has joined our company'
+        ]
+      }
+    },
   ]
 
   const giacomino = await models.People.create(personModel[0])
@@ -168,8 +152,10 @@ export default async (models) => {
   const benjpat = await models.People.create(personModel[2])
   const emilyjohn = await models.People.create(personModel[3])
   const oliviamel = await models.People.create(personModel[4])
-  const davidbrown = await models.People.create(personModel[5])
-  const sarasmith = await models.People.create(personModel[6])
+  const danielramirez = await models.People.create(personModel[5])
+  const kalibroneman = await models.People.create(personModel[6])
+  const marcoaventuzzi = await models.People.create(personModel[7])
+  const spencerright = await models.People.create(personModel[8])
 
 
   const projectModel = [
@@ -210,7 +196,7 @@ export default async (models) => {
         ], 
         url: "https://www.seldon.io/solutions/open-source-projects/alibi-detect",
       },
-      PersonId: sarasmith.id
+      PersonId: giacomino.id
     }, 
     {
       name: "AI against theft",
@@ -223,7 +209,7 @@ export default async (models) => {
         ],
         url: "https://veesion.io/secteurs/",
       },
-      PersonId: davidbrown.id
+      PersonId: giacomino.id
     }, 
     {
       name: "Case Study: Phase III AAD Trial",
@@ -436,49 +422,94 @@ export default async (models) => {
 
   const concernModel = [
     {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
       AreaId: tech_sw.id,
       ProjectId: hazy.id,
     },
     {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
       AreaId: tech_sw.id,
       ProjectId: preligens.id,
     },
     {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
       AreaId: tech_sw.id,
       ProjectId: seldom.id,
     },
     {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
       AreaId: tech_sw.id,
       ProjectId: veesion.id,
     },
     {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
       AreaId: heal_bio.id,
       ProjectId: inato.id,
     },
     {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
       AreaId: heal_bio.id,
       ProjectId: aqemia.id,
     },
     {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
       AreaId: heal_bio.id,
       ProjectId: posos.id,
     },
     {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
       AreaId: ene_sus.id,
       ProjectId: recycleye.id,
     },
     {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
       AreaId: ene_sus.id,
       ProjectId: wunder.id,
     },
     {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
       AreaId: com_goods.id,
       ProjectId: relex.id,
     },
     {
+      placeholder: "PLACEHOLDER",
+      data: {
+        place_holder: "PLACEHOLDER"
+      },
       AreaId: ene_sus.id,
       ProjectId: relex.id
     }
   ]
   await models.Concern.bulkCreate(concernModel)
 }
+
