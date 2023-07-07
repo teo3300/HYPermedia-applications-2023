@@ -3,8 +3,8 @@
     <main>
         <h1>People</h1>
         <div class="description">
-            <p> --- some not too long description about the team, look at what i've written in the 'about us' page before,
-                to not make it redondant ---</p>
+            <p> At IE3, team spirit is the driving force behind our success. Every day, our employees combine their strengths, skills and passion to achieve common goals. Together, we form a true professional family, where collaboration and solidarity are at the heart of our corporate culture.
+And this working family is at your service to support you in your various projects.</p>
         </div>
         <img :src="`/HYPermedia-applications-2023/img/people/group.jpg`" alt="Illustration photo" id="group-img" />
         <div class="content-wrap">
