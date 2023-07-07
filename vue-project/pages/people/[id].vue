@@ -15,7 +15,7 @@ const { data: person } =
     <main>
         <ShortBreadCrumbs parent="People" link="/people" :current="person.name" />
         <PersonTitle :name="person.name" :post="person.data.post" :description="person.data.desc_short" :image="person.data.image" />
-        <div class="wrap">
+        <div class="content-wrap">
             <div class="right">
                 <div class="subtitle">
                     <h2>Experience</h2>
