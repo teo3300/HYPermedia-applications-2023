@@ -7,7 +7,7 @@ export default async (models) => {
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
         image: 'Tafazzi.jpg', 
-        post: '', 
+        post: 'Technology Leader', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
