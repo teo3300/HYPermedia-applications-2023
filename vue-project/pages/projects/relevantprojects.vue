@@ -86,4 +86,9 @@ h1{
     margin-left: auto;
 }
 
+
+NuxtLink{
+    text-decoration: none;
+}
+
 </style>
