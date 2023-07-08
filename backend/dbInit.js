@@ -86,7 +86,7 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg', 
+        image: 'KaliBroneman.jpg',
         post: '', 
         experience: [
           '1998 - has obtained that diploma - in that school',
@@ -102,7 +102,7 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg', 
+        image: 'MarcoAventuzzi.jpg',
         post: '', 
         experience: [
           '1998 - has obtained that diploma - in that school',
@@ -118,7 +118,7 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg', 
+        image: 'DanielRamirezCastro.jpg',
         post: '', 
         experience: [
           '1998 - has obtained that diploma - in that school',
@@ -134,7 +134,7 @@ export default async (models) => {
       relevance: 1,
       data: {
         desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg', 
+        image: 'SpencerRight.jpg',
         post: '', 
         experience: [
           '1998 - has obtained that diploma - in that school',
