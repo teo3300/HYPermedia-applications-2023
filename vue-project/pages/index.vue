@@ -45,6 +45,7 @@
       <NuxtLink to="/projects/9"><img src="./projects/images/solarenergyIE3.jpg"></NuxtLink>
       <NuxtLink to="/projects/6"><img src="./projects/images/medicalIE3.jpg"></NuxtLink>
       <NuxtLink to="/projects/4"><img src="./projects/images/programmingIE3.jpg"></NuxtLink>
+      <NuxtLink to="projects" class="flecha">&rarr;</NuxtLink>
     </div>
     <CustomFooter></CustomFooter>
   </div>
