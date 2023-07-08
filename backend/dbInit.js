@@ -37,9 +37,9 @@ export default async (models) => {
       name: "Benjamin PATEL",
       relevance: 1,
       data: {
-        desc_short: "Dr. Tafazzi Poretti is a Project Manager and is in charge of planning, organizing and managing projects. He also have to coordinate tasks, assign ressources and ensure deadlines and objectives are met.",
+        desc_short: "Dr. Benjamin Patel works as a Marketing manager and is in charge of design and implement marketing strategies to promote the company's services",
         image: 'benjaminPatel.jpg', 
-        post: 'Project Manager', 
+        post: 'Marketing Manager', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
@@ -69,9 +69,9 @@ export default async (models) => {
       name: "Olivia MELBENT",
       relevance: 1,
       data: {
-        desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
+        desc_short: "Ms. Olivia Melbent is an accomplished Human Ressources Manager with extensive experience in handling all aspects related to personnel in the company. She handles recruitment, training, performance management, and employee issue resolution.",
         image: 'oliviaMELBENT.jpg', 
-        post: 'Founder & investment analyst', 
+        post: 'Human Ressources Manager', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
@@ -85,9 +85,9 @@ export default async (models) => {
       name: "Kali Broneman",
       relevance: 1,
       data: {
-        desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg', 
-        post: '', 
+        desc_short: "Ms. Kali Broneman has been graduated and now work as a responsible for the financial management of the company. She oversees accounting, develops budgets, performs financial analysis, and monitors performance indicators.",
+        image: 'KaliBroneman.jpg', 
+        post: 'Responsible of the financial management', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
@@ -101,9 +101,9 @@ export default async (models) => {
       name: "Marco Aventuzzi",
       relevance: 1,
       data: {
-        desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg', 
-        post: '', 
+        desc_short: "Dr. Marco Aventuzzi is an efficient Chief Legal Officer (CLO) and manages all legal matters within the company. By handling contracts, regulatory compliance, intellectual property protection he provides legal guidance to ensure the company operates within legal boundaries.",
+        image: 'MarcoAventuzzi.jpg', 
+        post: 'Chief Legal Officer', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
@@ -117,9 +117,9 @@ export default async (models) => {
       name: "Daniel Ramirez Castro",
       relevance: 1,
       data: {
-        desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg', 
-        post: '', 
+        desc_short: "Dr. Daniel Ramirez Castro can be considered as the Chief Data Officer (CDO). His role is to oversee the company's data strategy and analytics. He manages data collection, analysis, and interpretation to derive valuable insights, inform decision-making, and drive data-driven innovation. ",
+        image: 'DanielRamirezCastro.jpg', 
+        post: 'Chief Data Officer', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
@@ -133,9 +133,9 @@ export default async (models) => {
       name: "Spencer Right",
       relevance: 1,
       data: {
-        desc_short: "Dr. Tafazzi Poretti is an accomplished technology leader with extensive experience in managing innovative projects at the intersection of artificial intelligence and finance. With a Ph.D. in Computer Science and a deep understanding of machine learning algorithms, Dr. Poretti brings a wealth of technical expertise to the TechSage project.",
-        image: 'Tafazzi.jpg', 
-        post: '', 
+        desc_short: "Dr. Spencer Right works as an administrative assistant with extensive experience in providing administrative support to the team. He have to handles secretarial tasks, organizes meetings, manages correspondence, and tracks important documents.",
+        image: 'SpencerRight.jpg', 
+        post: 'Administrative Assistant', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
@@ -149,9 +149,9 @@ export default async (models) => {
       name: "Ethan Sullivan",
       relevance: 1,
       data: {
-        desc_short: "Dr. Alexander Wong as a manager is responsible for overseeing the overall team operations. They set goals, coordinate activities, and communicate with higher management.",
+        desc_short: "M. Ethan Sullivan occupies the post of Customer Relations Agent. He can provides some advices and have to manage and maintaine relationships with customers to ensure their satisfaction and loyalty",
         image: 'EthanSullivan.jpg', 
-        post: 'Manager', 
+        post: 'Customer Relations Agent', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
@@ -165,9 +165,9 @@ export default async (models) => {
       name: "Maria Isabel CONDE",
       relevance: 1,
       data: {
-        desc_short: "Dr. Alexander Wong as a manager is responsible for overseeing the overall team operations. They set goals, coordinate activities, and communicate with higher management.",
+        desc_short: "Ms. Maria Isabel Conde is a Marketing Officer at IE3. She is responsible for developing and implementing marketing strategies to promote a company's products, services, or brand and plays a crucial role in driving awareness, attracting customers, and generating revenue.  ",
         image: 'MariaIsabelConde.jpg', 
-        post: 'Manager', 
+        post: 'Marketing Officer', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
@@ -181,9 +181,9 @@ export default async (models) => {
       name: "Lucas THOMPSON",
       relevance: 1,
       data: {
-        desc_short: "Dr. Alexander Wong as a manager is responsible for overseeing the overall team operations. They set goals, coordinate activities, and communicate with higher management.",
+        desc_short: "Dr. Lucas Thompson as a IT Technician is responsible for providing technical assistance and support to users within an organization. Lucas' primary role is to ensure that computer systems, hardware, software, and networks are operating effectively and efficiently.",
         image: 'LucasThompson.jpg', 
-        post: 'Manager', 
+        post: 'IT Technician', 
         experience: [
           '1998 - has obtained that diploma - in that school',
           '2000 - has done that job - in that company', 
@@ -195,16 +195,18 @@ export default async (models) => {
     },
   ]
 
-  const giacomino = await models.People.create(personModel[0])
+  const taffazi = await models.People.create(personModel[0])
   const alexwong = await models.People.create(personModel[1])
-  const benjpat = await models.People.create(personModel[2])
+  const benpatel = await models.People.create(personModel[2])
   const emilyjohn = await models.People.create(personModel[3])
   const oliviamel = await models.People.create(personModel[4])
-  const danielramirez = await models.People.create(personModel[5])
-  const kalibroneman = await models.People.create(personModel[6])
-  const marcoaventuzzi = await models.People.create(personModel[7])
-  const spencerright = await models.People.create(personModel[8])
-
+  const kalibrone = await models.People.create(personModel[5])
+  const marcoavent = await models.People.create(personModel[6])
+  const danielram = await models.People.create(personModel[7])
+  const spencer = await models.People.create(personModel[8])
+  const ethansull = await models.People.create(personModel[9])
+  const mariaisa = await models.People.create(personModel[10])
+  const lucasthom = await models.People.create(personModel[11])
 
   const projectModel = [
     {
@@ -218,7 +220,7 @@ export default async (models) => {
         ], 
         url: "https://hazy.com/resources/2023/06/01/the-state-of-synthetic-data",
       },
-      PersonId: alexwong.id
+      PersonId: taffazi.id
     },
     {
       name: "AI factory",
@@ -231,7 +233,7 @@ export default async (models) => {
         ], 
         url: "https://preligens.com/products/ai-factory",
       },
-      PersonId: benjpat.id
+      PersonId: alexwong.id
     },
     {
       name: "Alibi detect",
@@ -244,7 +246,7 @@ export default async (models) => {
         ], 
         url: "https://www.seldon.io/solutions/open-source-projects/alibi-detect",
       },
-      PersonId: giacomino.id
+      PersonId: benpatel.id
     }, 
     {
       name: "AI against theft",
@@ -257,7 +259,7 @@ export default async (models) => {
         ],
         url: "https://veesion.io/secteurs/",
       },
-      PersonId: giacomino.id
+      PersonId: emilyjohn.id
     }, 
     {
       name: "Case Study: Phase III AAD Trial",
@@ -270,7 +272,7 @@ export default async (models) => {
         ],
         url: "https://inato.com/marketplace-materials/case-study-phase-iii-aad-trial/",
       },
-      PersonId: giacomino.id
+      PersonId: oliviamel.id
     }, 
     {
       name: "Quantum-inspired physics and AI",
@@ -283,7 +285,7 @@ export default async (models) => {
         ],
         url: "https://www.aqemia.com/#first_section",
       },
-      PersonId: giacomino.id
+      PersonId: kalibrone.id
     }, 
     {
       name: "Medical decision help",
@@ -296,7 +298,7 @@ export default async (models) => {
         ],
         url: "https://www.posos.co/solutions/decision-medicale",
       },
-      PersonId: giacomino.id
+      PersonId: marcoavent.id
     },
     {
       name: "Recycling with robotics",
@@ -309,7 +311,7 @@ export default async (models) => {
         ],
         url: "https://recycleye.com/solutions/",
       },
-      PersonId: giacomino.id
+      PersonId: danielram.id
     },
     {
       name: "Solar Energy provider",
@@ -322,7 +324,7 @@ export default async (models) => {
         ],
         url: "https://www.wundercapital.com/",
       },
-      PersonId: giacomino.id
+      PersonId: spencer.id
     },
     {
       name: "Demand Forecasting",
@@ -335,7 +337,7 @@ export default async (models) => {
         ],
         url: "https://www.relexsolutions.com/resources/demand-forecasting/",
       },
-      PersonId: giacomino.id
+      PersonId: ethansull.id
     },
 
 
