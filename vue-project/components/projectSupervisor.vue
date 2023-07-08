@@ -13,7 +13,7 @@
     <main class="main">
         <div class="image-container">
             <img
-                :src="`/HYPermedia-applications-2023/img/people/${image}`"
+                :src="`/img/people/${image}`"
                 class="image"
                 alt="Supervisor's picture"/>
         </div>
