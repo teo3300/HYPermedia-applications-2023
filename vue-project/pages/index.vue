@@ -46,8 +46,15 @@
     <NuxtLink to= "people/3"><img src="../images/members/benjaminPatel.jpg" ></NuxtLink>
    
     <NuxtLink to= "people/5"><img src="../images/members/oliviaMELBENT.jpg"></NuxtLink>
-    <NuxtLink to="people" class="flecha">&rarr; <p id="meet-team">Meet our team</p></NuxtLink>
+    <NuxtLink to="people" class="flecha">&rarr;</NuxtLink>
   </div>
+    <div class="projects">
+      <NuxtLink to="/projects/9"><img src="./projects/images/aiIE3.png"></NuxtLink>
+      <NuxtLink to="/projects/9"><img src="./projects/images/solarenergyIE3.jpg"></NuxtLink>
+      <NuxtLink to="/projects/6"><img src="./projects/images/medicalIE3.jpg"></NuxtLink>
+      <NuxtLink to="/projects/4"><img src="./projects/images/programmingIE3.jpg"></NuxtLink>
+      <NuxtLink to="projects" class="flecha">&rarr;</NuxtLink>
+    </div>
     <CustomFooter></CustomFooter>
   </div>
 </template>
