@@ -4,7 +4,7 @@
         <div id=content> <!-- Actual content -->
             <div id="title-section"> <!-- Text section -->
                 <img alt="Project's image"
-                     :src="`HYPermedia-applications-2023/img/projects/${image}`"/>
+                     :src="`/HYPermedia-applications-2023/img/projects/${image}`"/>
                 <div id="desc-short"> <!-- Short description of the project -->
                     {{desc_short}}
                 </div>
