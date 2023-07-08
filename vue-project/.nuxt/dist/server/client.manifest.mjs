@@ -1,0 +1,1 @@
+export { default } from "file:///C:/Users/onsur/OneDrive/Escritorio/polimi/hypermedia%20aplications/HYPermedia-applications-2023/vue-project/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
