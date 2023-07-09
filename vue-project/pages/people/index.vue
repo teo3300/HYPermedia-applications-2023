@@ -17,7 +17,7 @@ And this working family is at your service to support you in your various projec
                     :link="'/people/' + person.id" />
             </div>
         </div>
-        <img :src="`/HYPermedia-applications-2023/img/people/organigram.png`" alt="Company's organigram" id="organigram" />
+        <img :src="`/HYPermedia-applications-2023/img/people/organigram.jpg`" alt="Company's organigram" id="organigram" />
     </main>
     <CustomFooter></CustomFooter>
 </template>
@@ -51,8 +51,6 @@ h2 {
 
 .text {
     text-align: justify;
-    margin-left: 80px;
-    max-width: 600px;;
 }
 
 #group-img {

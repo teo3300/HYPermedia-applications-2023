@@ -18,12 +18,11 @@
                     <h2 id="h2-decal">Example of projects </h2>
                     <div class="bar"></div>
                 </div>
+                <Carousel :slides="person.Projects" option="projectOption" class="carouselProject"></Carousel>
             </div>
-            <Carousel :slides="person.Projects" option="projectOption" class="carouselProject"></Carousel>
-                <!--<ProjectCard :text="person.Project.name" :image="project.data.image" :link="'/projects/' + project.id" />-->
         </div>
-    <customFooter></customFooter>   
     </main>
+    <customFooter></customFooter>   
 </template>
 
 <script setup>
@@ -66,7 +65,7 @@ h2 {
     border: solid 1px #5BC0BE;
     margin: auto;
 }
-.wrap {
+.content-wrap {
     display: flex;
     width: 90%;
     margin : 20px 5%; 
