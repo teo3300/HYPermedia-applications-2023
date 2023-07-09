@@ -190,12 +190,7 @@ h2 {
         object-fit: cover;
     }
 
-@media only screen and (min-width: 768px) {
-    .profile-picture {
-        width: 25%; 
-        object-fit: cover;
-    }
-}
+
 
 
 .middle {
@@ -237,5 +232,24 @@ h2 {
 #image-map {
     width : 35% ; 
     aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 768px) {
+    .profile-picture {
+        width: 40%; 
+        object-fit: contain;
+    }
+    .first-part,
+    .second-part {
+        display :block ; 
+    }
+    .where-are-we {
+        display : block ; 
+    }
+    #image-map {
+        width : 50% ; 
+        margin : 0px 25% ; 
+    }
 }
 </style>

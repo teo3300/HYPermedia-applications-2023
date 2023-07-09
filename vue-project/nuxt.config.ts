@@ -25,7 +25,7 @@ export default defineNuxtConfig({
         link: [{
           rel: 'icon',
           type: 'image/x-icon',
-          href: '/favicon.ico'
+          href: '/HYPermedia-applications-2023/favicon.ico'
         }]
       }
     },

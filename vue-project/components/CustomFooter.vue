@@ -46,6 +46,11 @@
     padding: 20px 11.5%;
     font-family: 'Cambay', sans-serif;
 }
+@media only screen and (max-width: 768px) {
+    .footer {
+        height : 350px ; 
+    }
+}
 
 a {
     color: #6FFFE9;

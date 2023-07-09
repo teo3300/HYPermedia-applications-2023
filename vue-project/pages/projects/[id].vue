@@ -8,7 +8,6 @@
         <projectTitle
             :name = "proj.name"
             :desc_short = "proj.data.desc_short"
-            :desc_long = "proj.data.desc_long"
             :image = "proj.data.image"/>
         <Subtitle
             text="supervisor"/>

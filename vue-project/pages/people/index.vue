@@ -17,7 +17,7 @@ And this working family is at your service to support you in your various projec
                     :link="'/people/' + person.id" />
             </div>
         </div>
-        <img :src="`vue-project/public/img/people/Orga1.jpg`" alt="Company's organigram" id="organigram" />
+        <img :src="`/HYPermedia-applications-2023/img/people/organigram.jpg`" alt="Company's organigram" id="organigram" />
     </main>
     <CustomFooter></CustomFooter>
 </template>
