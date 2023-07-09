@@ -214,10 +214,7 @@ export default async (models) => {
       relevance: 1,
       data: {
         image: 'hazyAndI3E.png',
-        desc_short: 'We support the development and use of synthetic data with Hazy. The synthetic data is a revolutionary approach that bridges the gap between data privacy and data-driven innovation. Our mission is to drive forward the adoption of synthetic data, unlocking new possibilities while safeguarding sensitive information and ensuring compliance with privacy regulations.',
-        desc_long: [
-          `--- a long description ---`
-        ], 
+        desc_short: 'We support the development and use of synthetic data with Hazy. The synthetic data is a revolutionary approach that bridges the gap between data privacy and data-driven innovation. Our mission is to drive forward the adoption of synthetic data, unlocking new possibilities while safeguarding sensitive information and ensuring compliance with privacy regulations.', 
         url: "https://hazy.com/resources/2023/06/01/the-state-of-synthetic-data",
       },
       PersonId: taffazi.id
@@ -228,9 +225,6 @@ export default async (models) => {
       data: {
         image: 'preligensAndI3E.png',
         desc_short: 'This is a game-changing project, featuring a multi-intelligence, AI-enabled operating system. This innovative platform addresses complex intelligence problems by seamlessly integrating cutting-edge technologies like machine learning, natural language processing, computer vision, and predictive analytics.',
-        desc_long: [
-          `--- a long description ---`
-        ], 
         url: "https://preligens.com/products/ai-factory",
       },
       PersonId: alexwong.id
@@ -241,9 +235,6 @@ export default async (models) => {
       data: {
         image: 'seldomAndI3E.png',
         desc_short: 'This is a powerful open-source Python library dedicated to outlier, adversarial, and drift detection. This innovative toolset provides a comprehensive range of functionalities to identify anomalies, detect adversarial attacks, and monitor data drift in various domains, with transparency and interpretability.',
-        desc_long: [
-          `--- a long description ---`
-        ], 
         url: "https://www.seldon.io/solutions/open-source-projects/alibi-detect",
       },
       PersonId: benpatel.id
@@ -254,9 +245,6 @@ export default async (models) => {
       data: {
         image: 'veesionAndI3E.png',
         desc_short: 'This project empowers businesses to harness the power of AI in preventing theft across various types of stores. By leveraging advanced artificial intelligence technology, Veesion offers a comprehensive solution to detect and deter theft incidents. Join us on this transformative journey to enhance security measures, protect your assets, and create a safer shopping environment.',
-        desc_long: [
-          `--- a long description ---`
-        ],
         url: "https://veesion.io/secteurs/",
       },
       PersonId: emilyjohn.id
@@ -267,9 +255,6 @@ export default async (models) => {
       data: {
         image: 'inatoAndI3E.png',
         desc_short: 'Collaborate with Inato is to access untapped patient populations and identify qualified sites that could enroll patients in short amount of time for various kind of medical research. Discover how partnering with Inato allowed them to meet their trial goals and accelerate their timeline.',
-        desc_long: [
-          `--- a long description ---`
-        ],
         url: "https://inato.com/marketplace-materials/case-study-phase-iii-aad-trial/",
       },
       PersonId: oliviamel.id
@@ -280,9 +265,6 @@ export default async (models) => {
       data: {
         image: 'aqemiaAndI3E.png',
         desc_short: 'Aqemia combines quantum-inspired physics and AI to revolutionize drug discovery. By harnessing advanced algorithms, they accelerate and enhance the development of life-saving medications. Join us on this transformative journey to reshape the future of pharmaceutical research.',
-        desc_long: [
-          `--- a long description ---`
-        ],
         url: "https://www.aqemia.com/#first_section",
       },
       PersonId: kalibrone.id
@@ -293,9 +275,6 @@ export default async (models) => {
       data: {
         image: 'pososAndI3E.png',
         desc_short: 'This project aims to provide invaluable support for medical prescriptions and decisions. Through the integration of advanced technologies and data analysis, we offer an innovative solution that assists healthcare professionals in making informed choices and ensuring optimal patient care.',
-        desc_long: [
-          `--- a long description ---`
-        ],
         url: "https://www.posos.co/solutions/decision-medicale",
       },
       PersonId: marcoavent.id
@@ -306,9 +285,6 @@ export default async (models) => {
       data: {
         image: 'recycleyeAndI3E.png',
         desc_short: 'This project invites you to embrace robotic automation as the next frontier in sorting innovation for recycling. By harnessing cutting-edge robotics technology, Recycleye revolutionizes the recycling process, streamlining sorting operations and increasing efficiency.',
-        desc_long: [
-          `--- a long description ---`
-        ],
         url: "https://recycleye.com/solutions/",
       },
       PersonId: danielram.id
@@ -319,9 +295,6 @@ export default async (models) => {
       data: {
         image: 'wunderAndI3E.png',
         desc_short: 'This project offers a comprehensive solar energy solution tailored specifically for commercial and industrial real estate. As a dedicated solar energy provider, Wunder enables businesses to harness the power of renewable energy, reducing carbon footprint and energy costs.',
-        desc_long: [
-          `--- a long description ---`
-        ],
         url: "https://www.wundercapital.com/",
       },
       PersonId: spencer.id
@@ -332,9 +305,6 @@ export default async (models) => {
       data: {
         image: 'relexAndI3E.png',
         desc_short: 'This project specializes in demand forecasting for the retail and consumer goods industry. By leveraging advanced analytics and data-driven insights, Relex provides businesses with accurate predictions and valuable foresight into customer demand.',
-        desc_long: [
-          `--- a long description ---`
-        ],
         url: "https://www.relexsolutions.com/resources/demand-forecasting/",
       },
       PersonId: ethansull.id

@@ -135,10 +135,17 @@ const TOP = useRuntimeConfig().public.serverURL
   z-index: 2;
   display: flex;
   font-size: 25px;
+  text-decoration : underline ; 
+  text-decoration-color: #3A506B;
+}
+
+.areastext h2:hover, .healthcare h2:hover, .energy h2:hover, .ecommerce h2:hover {
+  text-decoration-color: white;
+  transition : text-decoration-color 0.5s ; 
 }
 
 .areastext h2 {
-  padding-top: 100px;
+  padding-top: 102px;
   padding-left: 30px;
   padding-right: 8px;
 }
