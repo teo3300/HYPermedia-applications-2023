@@ -315,7 +315,7 @@ export default async (models) => {
       data: {
         image: "smart_home_automation.jpg",
         desc_short: "Create an intelligent home automation system that allows users to control various aspects of their home, such as lighting, temperature, and security, through a smartphone app or voice commands.",
-        url: "/projects/smart-home-automation"
+        url: "/projects/11"
       },
       PersonId: mariaisa.id
     },
@@ -325,7 +325,7 @@ export default async (models) => {
       data: {
         image: "virtual_reality_gaming.jpg",
         desc_short: "Develop a virtual reality gaming platform that provides an immersive gaming experience with realistic graphics and intuitive controls, allowing players to interact with virtual worlds like never before.",
-        url: "/projects/virtual-reality-gaming"
+        url: "/projects/12"
       },
       PersonId: lucasthom.id
     },
@@ -335,7 +335,7 @@ export default async (models) => {
       data: {
         image: "renewable_energy_monitoring.jpg",
         desc_short: "Build a system that enables real-time monitoring and analysis of renewable energy sources, such as solar panels and wind turbines, to optimize energy production and improve overall efficiency.",
-        url: "/projects/renewable-energy-monitoring"
+        url: "/projects/13"
       },
       PersonId: spencer.id
     },
@@ -345,7 +345,7 @@ export default async (models) => {
       data: {
         image: "autonomous_delivery_drones.jpg",
         desc_short: "Design and implement autonomous delivery drones that can transport packages efficiently and safely from one location to another, revolutionizing the logistics and e-commerce industries.",
-        url: "/projects/autonomous-delivery-drones"
+        url: "/projects/14"
       },
       PersonId: marcoavent.id
     },
@@ -355,7 +355,7 @@ export default async (models) => {
       data: {
         image: "ai_language_translation.jpg",
         desc_short: "Develop an advanced language translation system that utilizes artificial intelligence algorithms to accurately translate text or speech between multiple languages, facilitating global communication.",
-        url: "/projects/ai-powered-language-translation"
+        url: "/projects/15"
       },
       PersonId: kalibrone.id
     },
@@ -365,7 +365,7 @@ export default async (models) => {
       data: {
         image: "augmented_reality_shopping.jpg",
         desc_short: "Create an augmented reality shopping application that allows users to virtually try on clothes, accessories, or home decor items before making a purchase, enhancing the online shopping experience.",
-        url: "/projects/augmented-reality-shopping"
+        url: "/projects/16"
       },
       PersonId: benpatel.id
     }    
