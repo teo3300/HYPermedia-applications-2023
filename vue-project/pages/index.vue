@@ -48,13 +48,6 @@
     <NuxtLink to= "people/5"><img src="../images/members/oliviaMELBENT.jpg"></NuxtLink>
     <NuxtLink to="people" class="flecha">&rarr;<p id="meet-team">Meet our team</p></NuxtLink>
   </div>
-    <div class="projects">
-      <NuxtLink to="/projects/9"><img src="./projects/images/aiIE3.png"></NuxtLink>
-      <NuxtLink to="/projects/9"><img src="./projects/images/solarenergyIE3.jpg"></NuxtLink>
-      <NuxtLink to="/projects/6"><img src="./projects/images/medicalIE3.jpg"></NuxtLink>
-      <NuxtLink to="/projects/4"><img src="./projects/images/programmingIE3.jpg"></NuxtLink>
-      <NuxtLink to="projects" class="flecha">&rarr;</NuxtLink>
-    </div>
     <CustomFooter></CustomFooter>
   </div>
 </template>
@@ -116,27 +109,30 @@ const TOP = useRuntimeConfig().public.serverURL
   text-align: center;
 }
 
+
 .areastext, .healthcare, .energy,  .ecommerce {
   margin : auto ; 
+  height : 240px ; 
 }
 
 .areas img {
   display: inline-block;
-  margin-right: 10px;
   position: relative;
-  height: 200px;
-  width : 85% ;
+  top : -150px ; 
+  width : 270px ; 
   padding: 20px;
+  z-index : 1 ; 
 }
 
 .areastext h2, .healthcare h2, .energy h2, .ecommerce h2 {
-  position: absolute;
+  position: relative;
+  top : 20px ; 
   margin: 20px;
   text-align: center;
   font-family: 'Crushed', sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   font-size: 25px;
 }
@@ -144,12 +140,11 @@ const TOP = useRuntimeConfig().public.serverURL
 .areastext h2 {
   padding-top: 100px;
   padding-left: 30px;
-  padding-right: 13px;
-  
+  padding-right: 8px;
 }
 
 .healthcare h2 {
-  padding-top: 100px;
+  padding-top: 102px;
   padding-left: 75px;
   padding-right: 93px;
 }
@@ -206,9 +201,6 @@ const TOP = useRuntimeConfig().public.serverURL
   width:max-content;
   align-items: flex-end;
   text-align: center;
-  
-
-
 }
 
 .projects img{
@@ -219,28 +211,15 @@ const TOP = useRuntimeConfig().public.serverURL
   width:300px;
   padding: 20px;
   clip-path:fill-box;
-
-
 }
 
-
-@media only screen and (max-width: 768px){
-
-  .energy h2{
-  position:absolute;
-  top: 600px;
-  margin-left: 20px;
-  text-align: center;
-  display: flex;
-  font-family: 'Crushed',sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding-top: 30px;
-  padding-left: 80px;
-  padding-right: 71px;
-  font-size: 30px;
-  z-index:1;
-}
+@media only screen and (max-width: 768px) {
+  .areas, .people {
+    overflow: auto;
+  }
+  .areastext h2 {
+    padding-top: 80px;
+  }
 }
 
 </style>
