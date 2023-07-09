@@ -568,6 +568,26 @@ export default async (models) => {
     {
       AreaId: heal_bio.id,
       ProjectId: ARS.id,
+    },
+    {
+      AreaId: tech_sw.id,
+      ProjectId: ALT.id,
+    },
+    {
+      AreaId: tech_sw.id,
+      ProjectId: recycleye.id,
+    },
+    {
+      AreaId: heal_bio.id,
+      ProjectId: wunder.id,
+    },
+    {
+      AreaId: com_goods.id,
+      ProjectId: ADD.id,
+    },
+    {
+      AreaId: heal_bio.id,
+      ProjectId: relex.id
     }
   ]
   await models.Concern.bulkCreate(concernModel)
