@@ -39,14 +39,14 @@
 
 
     <div class="people">
-    <NuxtLink to= "people/2"><img src="../images/members/AlexanderWONG.png" ></NuxtLink>
+    <NuxtLink to= "/people/2"><img src="../images/members/AlexanderWONG.png" ></NuxtLink>
   
-    <NuxtLink to= "people/4"><img src="../images/members/emilyJohnson.jpg" ></NuxtLink>
+    <NuxtLink to= "/people/4"><img src="../images/members/emilyJohnson.jpg" ></NuxtLink>
    
-    <NuxtLink to= "people/3"><img src="../images/members/benjaminPatel.jpg" ></NuxtLink>
+    <NuxtLink to= "/people/3"><img src="../images/members/benjaminPatel.jpg" ></NuxtLink>
    
-    <NuxtLink to= "people/5"><img src="../images/members/oliviaMELBENT.jpg"></NuxtLink>
-    <NuxtLink to="people" class="flecha">&rarr;<p id="meet-team">Meet our team</p></NuxtLink>
+    <NuxtLink to= "/people/5"><img src="../images/members/oliviaMELBENT.jpg"></NuxtLink>
+    <NuxtLink to="/people" class="flecha">&rarr;<p id="meet-team">Meet our team</p></NuxtLink>
   </div>
     <CustomFooter></CustomFooter>
   </div>
