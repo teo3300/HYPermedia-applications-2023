@@ -309,8 +309,66 @@ export default async (models) => {
       },
       PersonId: ethansull.id
     },
-
-
+    {
+      name: "Smart Home Automation",
+      relevance: 1,
+      data: {
+        image: "smart_home_automation.jpg",
+        desc_short: "Create an intelligent home automation system that allows users to control various aspects of their home, such as lighting, temperature, and security, through a smartphone app or voice commands.",
+        url: "/projects/smart-home-automation"
+      },
+      PersonId: mariaisa.id
+    },
+    {
+      name: "Virtual Reality Gaming",
+      relevance: 2,
+      data: {
+        image: "virtual_reality_gaming.jpg",
+        desc_short: "Develop a virtual reality gaming platform that provides an immersive gaming experience with realistic graphics and intuitive controls, allowing players to interact with virtual worlds like never before.",
+        url: "/projects/virtual-reality-gaming"
+      },
+      PersonId: lucasthom.id
+    },
+    {
+      name: "Renewable Energy Monitoring",
+      relevance: 3,
+      data: {
+        image: "renewable_energy_monitoring.jpg",
+        desc_short: "Build a system that enables real-time monitoring and analysis of renewable energy sources, such as solar panels and wind turbines, to optimize energy production and improve overall efficiency.",
+        url: "/projects/renewable-energy-monitoring"
+      },
+      PersonId: spencer.id
+    },
+    {
+      name: "Autonomous Delivery Drones",
+      relevance: 4,
+      data: {
+        image: "autonomous_delivery_drones.jpg",
+        desc_short: "Design and implement autonomous delivery drones that can transport packages efficiently and safely from one location to another, revolutionizing the logistics and e-commerce industries.",
+        url: "/projects/autonomous-delivery-drones"
+      },
+      PersonId: marcoavent.id
+    },
+    {
+      name: "AI-Powered Language Translation",
+      relevance: 5,
+      data: {
+        image: "ai_language_translation.jpg",
+        desc_short: "Develop an advanced language translation system that utilizes artificial intelligence algorithms to accurately translate text or speech between multiple languages, facilitating global communication.",
+        url: "/projects/ai-powered-language-translation"
+      },
+      PersonId: kalibrone.id
+    },
+    {
+      name: "Augmented Reality Shopping",
+      relevance: 6,
+      data: {
+        image: "augmented_reality_shopping.jpg",
+        desc_short: "Create an augmented reality shopping application that allows users to virtually try on clothes, accessories, or home decor items before making a purchase, enhancing the online shopping experience.",
+        url: "/projects/augmented-reality-shopping"
+      },
+      PersonId: benpatel.id
+    }    
   ]
   const hazy = await models.Projects.create(projectModel[0]) // hazy : synthetic data
   const preligens = await models.Projects.create(projectModel[1]) // preligens : ai factory
@@ -322,6 +380,12 @@ export default async (models) => {
   const recycleye = await models.Projects.create(projectModel[7]) // recycleye : recycling with robots
   const wunder = await models.Projects.create(projectModel[8]) // wunder : solar energy
   const relex = await models.Projects.create(projectModel[9]) // relex : demand forecasting
+  const SHA = await models.Projects.create(projectModel[10]) // relex : demand forecasting
+  const VRG = await models.Projects.create(projectModel[11]) // relex : demand forecasting
+  const REM = await models.Projects.create(projectModel[12]) // relex : demand forecasting
+  const ADD = await models.Projects.create(projectModel[13]) // relex : demand forecasting
+  const ALT = await models.Projects.create(projectModel[14]) // relex : demand forecasting
+  const ARS = await models.Projects.create(projectModel[15]) // relex : demand forecasting
 
 
 
@@ -389,7 +453,7 @@ export default async (models) => {
             url: "https://www.posos.co/",
           },
         ],
-        areaProjects : [inato.id, aqemia.id, posos.id],
+        areaProjects : [inato.id, aqemia.id, posos.id, SHA.id],
       }
     },
     {
@@ -413,7 +477,7 @@ export default async (models) => {
             url: "https://www.wundercapital.com/",
           },
         ],
-        areaProjects : [recycleye.id, wunder.id],
+        areaProjects : [recycleye.id, wunder.id, REM.id, ADD.id],
       }
     },
     {
@@ -431,7 +495,7 @@ export default async (models) => {
             url: "https://www.relexsolutions.com/",
           },
         ],
-        areaProjects : [relex.id],
+        areaProjects : [relex.id, VRG.id, ALT.id, ARS.id],
       }
     },
   ]
@@ -442,92 +506,68 @@ export default async (models) => {
 
   const concernModel = [
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: tech_sw.id,
       ProjectId: hazy.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: tech_sw.id,
       ProjectId: preligens.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: tech_sw.id,
       ProjectId: seldom.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: tech_sw.id,
       ProjectId: veesion.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: heal_bio.id,
       ProjectId: inato.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: heal_bio.id,
       ProjectId: aqemia.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: heal_bio.id,
       ProjectId: posos.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: ene_sus.id,
       ProjectId: recycleye.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: ene_sus.id,
       ProjectId: wunder.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
+      AreaId: ene_sus.id,
+      ProjectId: ADD.id,
+    },
+    {
       AreaId: com_goods.id,
       ProjectId: relex.id,
     },
     {
-      placeholder: "PLACEHOLDER",
-      data: {
-        place_holder: "PLACEHOLDER"
-      },
       AreaId: ene_sus.id,
       ProjectId: relex.id
+    },
+    {
+      AreaId: com_goods.id,
+      ProjectId: SHA.id,
+    },
+    {
+      AreaId: com_goods.id,
+      ProjectId: VRG.id,
+    },
+    {
+      AreaId: com_goods.id,
+      ProjectId: REM.id,
+    },
+    {
+      AreaId: heal_bio.id,
+      ProjectId: ARS.id,
     }
   ]
   await models.Concern.bulkCreate(concernModel)
