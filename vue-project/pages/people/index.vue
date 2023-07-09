@@ -51,8 +51,8 @@ h2 {
 
 .text {
     text-align: justify;
-    margin-left: 80px;
-    max-width: 600px;;
+    margin-left: 20px;
+    max-width: 1920px;;
 }
 
 #group-img {
