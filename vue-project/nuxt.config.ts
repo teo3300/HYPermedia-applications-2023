@@ -16,6 +16,9 @@ export default defineNuxtConfig({
       head : {
         title: 'I3E VC',
         charset: 'utf-8',
+        htmlAttrs: {
+          lang: 'en',
+        },
         meta: [
           {
             name: 'description',
