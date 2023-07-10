@@ -13,7 +13,7 @@
         <NuxtLink :to = "link" class="link">
             <div class="image-container">
                 <img class="img"
-                     :src="`/HYPermedia-applications-2023/img/people/${image}`"/>
+                     :src="`/HYPermedia-applications-2023/img/people/${image}`" alt="profile picture"/>
             </div>
             <div class="bar"></div>
             <span class="text">

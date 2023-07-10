@@ -9,44 +9,42 @@
         <div class="areastext">
           <h2>TECHNOLOGY AND SOFTWARE</h2>
           <img src="../images/technologyAndSoftware.jpg"
-            href="http://localhost:3000/HYPermedia-applications-2023/areas/1">
+            href="http://localhost:3000/HYPermedia-applications-2023/areas/1" alt="Technology and software illustration image">
 
         </div>
       </NuxtLink>
       <NuxtLink to="/areas/2">
         <div id="healthcare" class="healthcare">
           <h2>HEALTHCARE</h2>
-          <img src="../images/healthcareAndBiotechnology.jpg" href="">
+          <img src="../images/healthcareAndBiotechnology.jpg" href="" alt="healthcare and biotechnology illustration image">
 
         </div>
       </NuxtLink>
       <NuxtLink to="/areas/3">
         <div id="energy" class="energy">
           <h2>Clean Energy <br> & <br> Sustainability</h2>
-          <img src="../images/cleanEnergyAndSustainability.jpg" href="">
+          <img src="../images/cleanEnergyAndSustainability.jpg" href="" alt="clean energy and sustainability illustration image">
 
         </div>
       </NuxtLink>
       <NuxtLink to="/areas/4">
         <div id="E-COMERCE" class="ecommerce">
           <h2>E-commerce <br> & <br> consumer goods</h2>
-          <img src="../images/Ecommerce.jpg" href="">
-
-
+          <img src="../images/Ecommerce.jpg" href="" alt="e commerce and consumer goods illustration image">
         </div>
       </NuxtLink>
     </div>
 
 
     <div class="people">
-    <NuxtLink to= "people/2"><img src="../images/members/AlexanderWONG.png" ></NuxtLink>
+    <NuxtLink to= "/people/2"><img src="../images/members/AlexanderWONG.png" alt="Alexander wong profile picture" ></NuxtLink>
   
-    <NuxtLink to= "people/4"><img src="../images/members/emilyJohnson.jpg" ></NuxtLink>
+    <NuxtLink to= "/people/4"><img src="../images/members/emilyJohnson.jpg" alt="emily johnson profile picture" ></NuxtLink>
    
-    <NuxtLink to= "people/3"><img src="../images/members/benjaminPatel.jpg" ></NuxtLink>
+    <NuxtLink to= "/people/3"><img src="../images/members/benjaminPatel.jpg" alt="Benjamin patel profile picture"></NuxtLink>
    
-    <NuxtLink to= "people/5"><img src="../images/members/oliviaMELBENT.jpg"></NuxtLink>
-    <NuxtLink to="people" class="flecha">&rarr;<p id="meet-team">Meet our team</p></NuxtLink>
+    <NuxtLink to= "/people/5"><img src="../images/members/oliviaMELBENT.jpg" alt="Olivia melbent profile picture"></NuxtLink>
+    <NuxtLink to="/people" class="flecha">&rarr;<p id="meet-team">Meet our team</p></NuxtLink>
   </div>
     <CustomFooter></CustomFooter>
   </div>

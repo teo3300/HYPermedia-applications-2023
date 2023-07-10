@@ -30,4 +30,11 @@ main {
 h1 {
     text-align: center;
 }
+@media only screen and (max-width: 768px) {
+    main {
+    font-family: 'Cambay', sans-serif;
+    width: 80%;
+    margin: 0px 5%;
+}
+}
 </style>

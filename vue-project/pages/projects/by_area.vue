@@ -14,11 +14,9 @@
 
 <script setup>
 
-    const route = useRoute()
-    const id = route.params.id
     const URI = useRuntimeConfig().public.serverURL
               + '/areas'
-    console.log('/projects/by_area' + id + '\tFetching: "' + URI + '"')
+    console.log('/projects/by_area\tFetching: "' + URI + '"')
     const {data: areas } = await useFetch(URI)
 
     useSeoMeta({

@@ -79,4 +79,14 @@ h2 {
 .carouselProject {
     height: 20em;
 }
+
+@media only screen and (max-width: 768px) {
+    .content-wrap {
+        width: 96%;
+        margin: 20px 2%;
+    }
+    .carouselPartner {
+        height: 13em;
+    }  
+}
 </style>

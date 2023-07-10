@@ -84,4 +84,17 @@ p {
 p {
     font-family: 'Cambay', sans-serif;
 }
+
+@media only screen and (max-width: 768px) {
+    .title-description {
+        height : 580px ; 
+    }
+    .blue-transparent-2 {
+        margin : auto 5%; 
+    }
+    .blue-transparent-1 {
+        top : -102%;
+    }
+
+}
 </style>

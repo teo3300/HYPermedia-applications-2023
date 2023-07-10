@@ -2,7 +2,7 @@
   <transition :name="transitionEffect">
     <div class="carousel-item" v-show="currentSlide === index">
       <div v-if="option === 'partnerOption'" class="if">
-        <div class="base-image-input"> <img :src="`${slide.image}`" /> </div>
+        <div class="base-image-input"> <img :src="`${slide.image}`" alt="Partner's logo"/> </div>
         <div class="text">
           <h3>{{ slide.name }}</h3>
           <p>{{ slide.desc_short }}</p>
@@ -10,7 +10,7 @@
         </div>
       </div>
       <div v-else-if="option === 'projectOption'" class="if">
-        <div class="base-image-input"> <img :src="`/HYPermedia-applications-2023/img/projects/${slide.data.image}`" /> </div>
+        <div class="base-image-input"> <img :src="`/HYPermedia-applications-2023/img/projects/${slide.data.image}`" alt="project's illustration image"/> </div>
         <div class="text">
           <h3>{{ slide.name }}</h3>
           <p>{{ slide.data.desc_short }}</p>
@@ -19,7 +19,7 @@
       </div>
       <div v-else-if="option === 'areaOption'" class="if">
         <div class="base-image-input">
-          <img :src="`${slide.data.imgURL}`" /> </div>
+          <img :src="`${slide.data.imgURL}`" alt="area's illustration image"/> </div>
         <div class="text">
           <h3>{{ slide.name }}</h3>
           <p>{{ slide.data.summary }}</p>

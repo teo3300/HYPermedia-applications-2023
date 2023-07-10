@@ -16,6 +16,9 @@ export default defineNuxtConfig({
       head : {
         title: 'I3E VC',
         charset: 'utf-8',
+        htmlAttrs: {
+          lang: 'en',
+        },
         meta: [
           {
             name: 'description',
@@ -28,10 +31,5 @@ export default defineNuxtConfig({
           href: '/HYPermedia-applications-2023/favicon.ico'
         }]
       }
-    },
-    link: [{
-        rel: 'icon',
-        type: 'image/x-icon',
-        href: 'HYPermedia-applications-2023/favicon.ico'
-    }]
+    }
 })
