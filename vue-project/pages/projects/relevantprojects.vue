@@ -2,25 +2,25 @@
 <CustomHeader></CustomHeader>
 <h1>Most relevant projects</h1>
 <NuxtLink to="/projects/2" class="ref"><div id="projec1">
-    <img src="./images/aiIE3.png">
+    <img src="./images/aiIE3.png" alt="AI project illustration image">
     <p>This is a game-changing project, featuring a multi-intelligence, AI-enabled operating system. This innovative platform addresses complex intelligence problems by seamlessly integrating cutting-edge technologies like machine learning, natural language processing, computer vision, and predictive analytics.</p>
 </div></NuxtLink>
 
 <NuxtLink to="/projects/9" class="ref"><div id="projec2">
    
     <p> This project offers a comprehensive solar energy solution tailored specifically for commercial and industrial real estate. As a dedicated solar energy provider, Wunder enables businesses to harness the power of renewable energy, reducing carbon footprint and energy costs.</p>
-    <img src="./images/solarenergyIE3.jpg">
+    <img src="./images/solarenergyIE3.jpg" alt="Solar energy project illustration image">
 </div></NuxtLink>
 
 <NuxtLink to="/projects/6" class="ref"><div id="projec1">
-    <img src="./images/medicalIE3.jpg">
+    <img src="./images/medicalIE3.jpg" alt="medical prescription project illustration image">
     <p>This project aims to provide invaluable support for medical prescriptions and decisions. Through the integration of advanced technologies and data analysis, we offer an innovative solution that assists healthcare professionals in making informed choices and ensuring optimal patient care.</p>
 </div></NuxtLink>
 
 <NuxtLink to="/projects/4" class="ref"><div id="projec2" >
     
     <p>This project empowers businesses to harness the power of AI in preventing theft across various types of stores. By leveraging advanced artificial intelligence technology, Veesion offers a comprehensive solution to detect and deter theft incidents. Join us on this transformative journey to enhance security measures, protect your assets, and create a safer shopping environment.</p>
-    <img src="./images/programmingIE3.jpg">
+    <img src="./images/programmingIE3.jpg" alt="AI against thieft project illustration image">
 </div></NuxtLink>
 <CustomFooter></CustomFooter>
 </template>
